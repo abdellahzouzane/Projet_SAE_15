@@ -1,0 +1,145 @@
+
+:root {
+    --primary-color: #0056b3; /* Bleu pour les accents (comme l'ARCEP) */
+    --secondary-color: #333; /* Texte principal */
+    --background-color: #f4f7f9; /* Arrière-plan léger */
+    --white: #ffffff;
+    --border-color: #ddd;
+    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+/* --- En-tête et Navigation --- */
+header {
+    background-color: var(--white);
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* --- Contenu Principal et Sections --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-section {
+    background-color: var(--white);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* --- Blocs d'Analyse (Tableaux/Graphiques) --- */
+.analysis-block {
+    margin-top: 25px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+.analysis-block h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.data-visualization {
+    /* Espace réservé pour les graphiques et tableaux insérés par Python (via un iframe, une image, ou du HTML/JS direct) */
+    min-height: 300px; 
+    border: 1px dashed #ccc; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.comment {
+    background-color: #e6f0ff; /* Bleu très clair pour le commentaire */
+    border-left: 5px solid var(--primary-color);
+    padding: 10px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* --- Conteneur de la Carte --- */
+#map-container {
+    /* La carte interactive sera affichée ici */
+    min-height: 500px; 
+    border: 1px solid var(--primary-color); 
+}
+
+/* --- Pied de Page --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    color: #666;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
