@@ -1,0 +1,43 @@
+import csv
+
+# Nom du fichier CSV à ouvrir
+fichier_csv = "experimentations_5G.csv"
+
+# Colonnes à récupérer
+colonnes_cible = [
+    "Bande de fréquences",
+    "Fréquences attribuées (limite haute)",
+    "Fréquences attribuées (limite basse)",
+    "Région",
+    "Début",
+    "Fin"
+]
+
+# Liste pour stocker les données extraites
+donnees = []
+
+# Lecture du fichier CSV
+with open(fichier_csv, mode="r", encoding="windows-1252") as fichier:
+    lecteur = csv.DictReader(fichier, delimiter=';')
+    for ligne in lecteur:
+        entree = {col: ligne[col] for col in colonnes_cible if col in ligne}
+        donnees.append(entree)
+
+# Calcul de la largeur maximale de chaque colonne pour un affichage aligné
+largeurs = {col: len(col) for col in colonnes_cible}  # commence par le nom des colonnes
+for d in donnees:
+    for col in colonnes_cible:
+        if col in d:
+            largeurs[col] = max(largeurs[col], len(d[col]))
+
+# Fonction pour créer une ligne formatée
+def format_ligne(dico):
+    return " | ".join(dico[col].ljust(largeurs[col]) for col in colonnes_cible)
+
+# Affichage de l'en-tête
+print(format_ligne({col: col for col in colonnes_cible}))
+print("-+-".join("-" * largeurs[col] for col in colonnes_cible))
+
+# Affichage des données
+for d in donnees:
+    print(format_ligne(d))
