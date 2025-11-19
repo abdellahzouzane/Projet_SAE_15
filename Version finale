@@ -2,6 +2,7 @@ import csv
 import pandas as pd
 import matplotlib.pyplot as plt
 import folium
+from folium.plugins import MarkerCluster
 
 # === 1. Lecture du fichier CSV ===
 fichier_csv = "experimentations_5G.csv"
@@ -28,7 +29,7 @@ with open(fichier_csv, mode="r", encoding="windows-1252") as fichier:
 
 print(f"{len(donnees)} lignes lues depuis {fichier_csv}")
 
-# === 2. Conversion en DataFrame ===
+# === 2. Conversion ===
 df = pd.DataFrame(donnees)
 
 df["Latitude"] = pd.to_numeric(df["Latitude"], errors="coerce")
@@ -39,29 +40,27 @@ df["Fin"] = pd.to_datetime(df["Fin"], errors="coerce")
 df["Durée (jours)"] = (df["Fin"] - df["Début"]).dt.days
 df["Année"] = df["Début"].dt.year
 
-# === 3. Graphiques ===
-
+# === 3. GÉNÉRATION DES GRAPHIQUES ===
 plt.figure(figsize=(10, 6))
 df["Expérimentateur"].value_counts().plot(kind="bar", color="skyblue")
 plt.title("Nombre d'expérimentations 5G par opérateur")
-plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig("graph_operateurs.png")
+plt.savefig("graph_operateurs.png", dpi=150)
 plt.close()
 
 plt.figure(figsize=(10, 6))
 df["Région"].value_counts().plot(kind="barh", color="lightgreen")
 plt.title("Expérimentations 5G par région")
 plt.tight_layout()
-plt.savefig("graph_regions.png")
+plt.savefig("graph_regions.png", dpi=150)
 plt.close()
 
 plt.figure(figsize=(8, 5))
 df["Année"].value_counts().sort_index().plot(kind="line", marker="o", color="coral")
 plt.title("Nombre d'expérimentations 5G par année")
-plt.grid(True)
+plt.grid(True, linestyle="--")
 plt.tight_layout()
-plt.savefig("graph_annees.png")
+plt.savefig("graph_annees.png", dpi=150)
 plt.close()
 
 plt.figure(figsize=(8, 5))
@@ -69,46 +68,78 @@ df["Durée (jours)"].dropna().plot(kind="hist", bins=30, color="purple", alpha=0
 plt.title("Durée des expérimentations (jours)")
 plt.grid(axis='y')
 plt.tight_layout()
-plt.savefig("graph_durees.png")
+plt.savefig("graph_durees.png", dpi=150)
 plt.close()
 
-print("Graphiques générés.")
+print("Graphiques exportés.")
 
-# === 4. Carte Folium ===
+# === 4. CARTE FOLIUM AMÉLIORÉE ===
 
 centre_lat = df["Latitude"].dropna().mean()
 centre_lon = df["Longitude"].dropna().mean()
 
-carte = folium.Map(location=[centre_lat, centre_lon], zoom_start=6)
+carte = folium.Map(location=[centre_lat, centre_lon], zoom_start=6, tiles="OpenStreetMap")
+
+cluster = MarkerCluster().add_to(carte)
+
+couleurs = {
+    "Orange": "orange",
+    "SFR": "red",
+    "Bouygues": "blue",
+    "Free": "green"
+}
 
 for _, row in df.iterrows():
     if pd.notna(row["Latitude"]) and pd.notna(row["Longitude"]):
-        popup = f"""
-        <b>{row['Expérimentateur']}</b><br>
-        Commune : {row['Commune']}<br>
-        Région : {row['Région']}<br>
-        Bande : {row['Bande de fréquences']}
-        """
+        
+        couleur = couleurs.get(row["Expérimentateur"], "gray")
+
+        popup = folium.Popup(
+            f"""
+            <b>{row['Expérimentateur']}</b><br>
+            Commune : {row['Commune']}<br>
+            Région : {row['Région']}<br>
+            Bande utilisée : {row['Bande de fréquences']}
+            """,
+            max_width=300
+        )
+
         folium.Marker(
             location=[row["Latitude"], row["Longitude"]],
-            popup=popup
-        ).add_to(carte)
+            popup=popup,
+            icon=folium.Icon(color=couleur)
+        ).add_to(cluster)
 
 carte.save("map_5g.html")
-print("Carte Folium créée : map_5g.html")
 
-# === 5. Insertion dans ton HTML ===
+# === 5. INTÉGRATION DANS LE HTML ===
 
 with open("index.html", "r", encoding="utf-8") as f:
     html = f.read()
 
+# insertion de la carte
 with open("map_5g.html", "r", encoding="utf-8") as f:
     html_map = f.read()
 
-html_final = html.replace("[Zone d'affichage de la carte générée]", html_map)
+html = html.replace("[Zone d'affichage de la carte générée]", html_map)
 
+# insertion des graphiques
+html = html.replace("[Tableau synthétique des expérimentations par région]", 
+                    '<img src="graph_regions.png" alt="graph_regions">')
+
+html = html.replace("[Liste ou graphique des principaux Expérimentateurs (SNCF, CEA, etc.)]", 
+                    '<img src="graph_operateurs.png" alt="graph_operateurs">')
+
+html = html.replace("[Graphique à barres ou circulaire montrant la fréquence d'utilisation de chaque technologie]", 
+                    '<img src="graph_annees.png" alt="graph_annees">')
+
+html = html.replace("[Graphique montrant quels usages sont les plus testés]", 
+                    '<img src="graph_durees.png" alt="graph_durees">')
+
+# FICHIER FINAL
 with open("rapport_5G_final.html", "w", encoding="utf-8") as f:
-    f.write(html_final)
+    f.write(html)
 
-print("Fichier final généré : rapport_5G_final.html")
+print("✔ Fichier HTML final généré : rapport_5G_final.html")
+
 
