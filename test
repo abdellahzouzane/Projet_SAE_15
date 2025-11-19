@@ -1,8 +1,0 @@
-import csv
-
-fichier_csv = "experimentations_5G.csv"
-
-with open(fichier_csv, mode="r", encoding="latin-1") as fichier:
-    lecteur = csv.DictReader(fichier)
-    print("👉 En-têtes du CSV :", lecteur.fieldnames)
-
