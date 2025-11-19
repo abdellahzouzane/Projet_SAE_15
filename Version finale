@@ -12,11 +12,11 @@ colonnes_cible = [
     "Fréquences attribuées (limite haute)",
     "Fréquences attribuées (limite basse)",
     "Région",
-    "Début",
-    "Fin",
+    "Commune",
     "Latitude",
     "Longitude",
-    "Commune"
+    "Début",
+    "Fin"
 ]
 
 donnees = []
@@ -28,16 +28,14 @@ with open(fichier_csv, mode="r", encoding="windows-1252") as fichier:
 
 print(f"{len(donnees)} lignes lues depuis {fichier_csv}")
 
-# === 2. Conversion en DataFrame Pandas ===
+# === 2. Conversion en DataFrame ===
 df = pd.DataFrame(donnees)
 
-# == conversion types ==
 df["Latitude"] = pd.to_numeric(df["Latitude"], errors="coerce")
 df["Longitude"] = pd.to_numeric(df["Longitude"], errors="coerce")
-
-# Nettoyage dates
 df["Début"] = pd.to_datetime(df["Début"], errors="coerce")
 df["Fin"] = pd.to_datetime(df["Fin"], errors="coerce")
+
 df["Durée (jours)"] = (df["Fin"] - df["Début"]).dt.days
 df["Année"] = df["Début"].dt.year
 
@@ -76,11 +74,10 @@ plt.close()
 
 print("Graphiques générés.")
 
-# === 4. Génération d’une carte Folium ===
+# === 4. Carte Folium ===
 
-# Si pas de coordonnées, on centre sur la France
-centre_lat = df["Latitude"].dropna().mean() if df["Latitude"].notna().any() else 46.5
-centre_lon = df["Longitude"].dropna().mean() if df["Longitude"].notna().any() else 2.5
+centre_lat = df["Latitude"].dropna().mean()
+centre_lon = df["Longitude"].dropna().mean()
 
 carte = folium.Map(location=[centre_lat, centre_lon], zoom_start=6)
 
@@ -98,19 +95,20 @@ for _, row in df.iterrows():
         ).add_to(carte)
 
 carte.save("map_5g.html")
-print("Carte Folium générée.")
+print("Carte Folium créée : map_5g.html")
 
-# === 5. Intégration dans le fichier HTML de ton projet ===
+# === 5. Insertion dans ton HTML ===
 
-with open("ton_html.html", "r", encoding="utf-8") as f:
-    html_contenu = f.read()
+with open("index.html", "r", encoding="utf-8") as f:
+    html = f.read()
 
 with open("map_5g.html", "r", encoding="utf-8") as f:
-    carte_html = f.read()
+    html_map = f.read()
 
-html_final = html_contenu.replace("[Zone d'affichage de la carte générée]", carte_html)
+html_final = html.replace("[Zone d'affichage de la carte générée]", html_map)
 
 with open("rapport_5G_final.html", "w", encoding="utf-8") as f:
     f.write(html_final)
 
-print("Fichier HTML final généré : rapport_5G_final.html")
+print("Fichier final généré : rapport_5G_final.html")
+
