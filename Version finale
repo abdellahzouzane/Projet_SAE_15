@@ -1,0 +1,116 @@
+import csv
+import pandas as pd
+import matplotlib.pyplot as plt
+import folium
+
+# === 1. Lecture du fichier CSV ===
+fichier_csv = "experimentations_5G.csv"
+
+colonnes_cible = [
+    "Expérimentateur",
+    "Bande de fréquences",
+    "Fréquences attribuées (limite haute)",
+    "Fréquences attribuées (limite basse)",
+    "Région",
+    "Début",
+    "Fin",
+    "Latitude",
+    "Longitude",
+    "Commune"
+]
+
+donnees = []
+with open(fichier_csv, mode="r", encoding="windows-1252") as fichier:
+    lecteur = csv.DictReader(fichier, delimiter=';')
+    for ligne in lecteur:
+        entree = {col: ligne.get(col, "") for col in colonnes_cible}
+        donnees.append(entree)
+
+print(f"{len(donnees)} lignes lues depuis {fichier_csv}")
+
+# === 2. Conversion en DataFrame Pandas ===
+df = pd.DataFrame(donnees)
+
+# == conversion types ==
+df["Latitude"] = pd.to_numeric(df["Latitude"], errors="coerce")
+df["Longitude"] = pd.to_numeric(df["Longitude"], errors="coerce")
+
+# Nettoyage dates
+df["Début"] = pd.to_datetime(df["Début"], errors="coerce")
+df["Fin"] = pd.to_datetime(df["Fin"], errors="coerce")
+df["Durée (jours)"] = (df["Fin"] - df["Début"]).dt.days
+df["Année"] = df["Début"].dt.year
+
+# === 3. Graphiques ===
+
+plt.figure(figsize=(10, 6))
+df["Expérimentateur"].value_counts().plot(kind="bar", color="skyblue")
+plt.title("Nombre d'expérimentations 5G par opérateur")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("graph_operateurs.png")
+plt.close()
+
+plt.figure(figsize=(10, 6))
+df["Région"].value_counts().plot(kind="barh", color="lightgreen")
+plt.title("Expérimentations 5G par région")
+plt.tight_layout()
+plt.savefig("graph_regions.png")
+plt.close()
+
+plt.figure(figsize=(8, 5))
+df["Année"].value_counts().sort_index().plot(kind="line", marker="o", color="coral")
+plt.title("Nombre d'expérimentations 5G par année")
+plt.grid(True)
+plt.tight_layout()
+plt.savefig("graph_annees.png")
+plt.close()
+
+plt.figure(figsize=(8, 5))
+df["Durée (jours)"].dropna().plot(kind="hist", bins=30, color="purple", alpha=0.7)
+plt.title("Durée des expérimentations (jours)")
+plt.grid(axis='y')
+plt.tight_layout()
+plt.savefig("graph_durees.png")
+plt.close()
+
+print("Graphiques générés.")
+
+# === 4. Génération d’une carte Folium ===
+
+# Si pas de coordonnées, on centre sur la France
+centre_lat = df["Latitude"].dropna().mean() if df["Latitude"].notna().any() else 46.5
+centre_lon = df["Longitude"].dropna().mean() if df["Longitude"].notna().any() else 2.5
+
+carte = folium.Map(location=[centre_lat, centre_lon], zoom_start=6)
+
+for _, row in df.iterrows():
+    if pd.notna(row["Latitude"]) and pd.notna(row["Longitude"]):
+        popup = f"""
+        <b>{row['Expérimentateur']}</b><br>
+        Commune : {row['Commune']}<br>
+        Région : {row['Région']}<br>
+        Bande : {row['Bande de fréquences']}
+        """
+        folium.Marker(
+            location=[row["Latitude"], row["Longitude"]],
+            popup=popup
+        ).add_to(carte)
+
+carte.save("map_5g.html")
+print("Carte Folium générée.")
+
+# === 5. Intégration dans le fichier HTML de ton projet ===
+
+with open("ton_html.html", "r", encoding="utf-8") as f:
+    html_contenu = f.read()
+
+with open("map_5g.html", "r", encoding="utf-8") as f:
+    carte_html = f.read()
+
+html_final = html_contenu.replace("[Zone d'affichage de la carte générée]", carte_html)
+
+with open("rapport_5G_final.html", "w", encoding="utf-8") as f:
+    f.write(html_final)
+
+print("Fichier HTML final généré : rapport_5G_final.html")
