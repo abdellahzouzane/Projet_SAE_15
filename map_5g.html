@@ -1,0 +1,3215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e9d445a114ff8a72666aba2c0772636c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e9d445a114ff8a72666aba2c0772636c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e9d445a114ff8a72666aba2c0772636c = L.map(
+                "map_e9d445a114ff8a72666aba2c0772636c",
+                {
+                    center: [46.97637516561302, 0.9846258049233719],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bbcd96d7527e758407fd005e15817ac8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bbcd96d7527e758407fd005e15817ac8.addTo(map_e9d445a114ff8a72666aba2c0772636c);
+        
+    
+            var marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_7dc0fd76cb6190f35c404aa54acd82c5 = L.marker(
+                [47.2919444444444, -1.48444444444444],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_d4113a1e6954b5de6779c9cf9e85f327 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_7dc0fd76cb6190f35c404aa54acd82c5.setIcon(icon_d4113a1e6954b5de6779c9cf9e85f327);
+        
+    
+        var popup_c0c76bb7667acfdbdf814bfd4597c548 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e1c879a7d0e47e0d5886841dcfded6b5 = $(`<div id="html_e1c879a7d0e47e0d5886841dcfded6b5" style="width: 100.0%; height: 100.0%;">                 <b>SNCF Réseau</b><br>                 Commune : Carquefou<br>                 Région : Pays de la Loire<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_c0c76bb7667acfdbdf814bfd4597c548.setContent(html_e1c879a7d0e47e0d5886841dcfded6b5);
+            
+        
+
+        marker_7dc0fd76cb6190f35c404aa54acd82c5.bindPopup(popup_c0c76bb7667acfdbdf814bfd4597c548)
+        ;
+
+        
+    
+    
+            var marker_8878a7aa118a0385c15b709670f2efe8 = L.marker(
+                [47.312245, -2.169842],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_f8138696d212c3436ed11d87729a874d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8878a7aa118a0385c15b709670f2efe8.setIcon(icon_f8138696d212c3436ed11d87729a874d);
+        
+    
+        var popup_ba8772a3e8586184009cd45314c9ba1e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ddc8e03fdcdf8847664facd091608e1 = $(`<div id="html_9ddc8e03fdcdf8847664facd091608e1" style="width: 100.0%; height: 100.0%;">                 <b>Airbus Operations SAS</b><br>                 Commune : Saint-Nazaire<br>                 Région : Pays de la Loire<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_ba8772a3e8586184009cd45314c9ba1e.setContent(html_9ddc8e03fdcdf8847664facd091608e1);
+            
+        
+
+        marker_8878a7aa118a0385c15b709670f2efe8.bindPopup(popup_ba8772a3e8586184009cd45314c9ba1e)
+        ;
+
+        
+    
+    
+            var marker_abb8ee3c25b4c31bac633d4aaa28a5ad = L.marker(
+                [48.785, 2.20827],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_afdc0631b64057bb75f1d2b1996d5e5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_abb8ee3c25b4c31bac633d4aaa28a5ad.setIcon(icon_afdc0631b64057bb75f1d2b1996d5e5d);
+        
+    
+        var popup_2225b63399f88cfa668991df59b41ace = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_43102cf51924e537a079c9d40fb80138 = $(`<div id="html_43102cf51924e537a079c9d40fb80138" style="width: 100.0%; height: 100.0%;">                 <b>GTS FRANCE SAS</b><br>                 Commune : Vélizy-Villacoublay<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_2225b63399f88cfa668991df59b41ace.setContent(html_43102cf51924e537a079c9d40fb80138);
+            
+        
+
+        marker_abb8ee3c25b4c31bac633d4aaa28a5ad.bindPopup(popup_2225b63399f88cfa668991df59b41ace)
+        ;
+
+        
+    
+    
+            var marker_3322df42c602a0e313706a728cbd8ccb = L.marker(
+                [48.5759425, 7.7430558],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_246ce03ecbe7af85d8444a9c61c79719 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3322df42c602a0e313706a728cbd8ccb.setIcon(icon_246ce03ecbe7af85d8444a9c61c79719);
+        
+    
+        var popup_5446ff7610a58a268cd8386aa37b5e69 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6886f18cf92ccb76a6b3773854ad0160 = $(`<div id="html_6886f18cf92ccb76a6b3773854ad0160" style="width: 100.0%; height: 100.0%;">                 <b>IHU Strasbourg</b><br>                 Commune : Strasbourg<br>                 Région : Grand Est<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_5446ff7610a58a268cd8386aa37b5e69.setContent(html_6886f18cf92ccb76a6b3773854ad0160);
+            
+        
+
+        marker_3322df42c602a0e313706a728cbd8ccb.bindPopup(popup_5446ff7610a58a268cd8386aa37b5e69)
+        ;
+
+        
+    
+    
+            var marker_e4e0ad426d556e57f88a1a93bb2990f2 = L.marker(
+                [48.8287222, 2.26152777],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_e61639523e83cfc34ae645141ecad86e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e4e0ad426d556e57f88a1a93bb2990f2.setIcon(icon_e61639523e83cfc34ae645141ecad86e);
+        
+    
+        var popup_b6165e077efbbc0df73df85006d148d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_623998cba5a8d509ce06808d228ccc0c = $(`<div id="html_623998cba5a8d509ce06808d228ccc0c" style="width: 100.0%; height: 100.0%;">                 <b>Capgemini</b><br>                 Commune : Issy-les-Moulineaux<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_b6165e077efbbc0df73df85006d148d3.setContent(html_623998cba5a8d509ce06808d228ccc0c);
+            
+        
+
+        marker_e4e0ad426d556e57f88a1a93bb2990f2.bindPopup(popup_b6165e077efbbc0df73df85006d148d3)
+        ;
+
+        
+    
+    
+            var marker_45314e81829ad662b8979980d7371928 = L.marker(
+                [48.1357639, -1.6231722],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_9ca1bfc090ba8ef13ea79edb5d9ab57a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_45314e81829ad662b8979980d7371928.setIcon(icon_9ca1bfc090ba8ef13ea79edb5d9ab57a);
+        
+    
+        var popup_8114e95155a857fd991f5d92acb4bd62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ead03a88fdde9816ce8b6d8fe24bfce7 = $(`<div id="html_ead03a88fdde9816ce8b6d8fe24bfce7" style="width: 100.0%; height: 100.0%;">                 <b>B-COM</b><br>                 Commune : Lannion<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_8114e95155a857fd991f5d92acb4bd62.setContent(html_ead03a88fdde9816ce8b6d8fe24bfce7);
+            
+        
+
+        marker_45314e81829ad662b8979980d7371928.bindPopup(popup_8114e95155a857fd991f5d92acb4bd62)
+        ;
+
+        
+    
+    
+            var marker_3e6a7c858bcbc0884c0ca7e179cf288f = L.marker(
+                [47.033952, 5.233182],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_f1eee9ffe87c3c654345485b12d39b9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3e6a7c858bcbc0884c0ca7e179cf288f.setIcon(icon_f1eee9ffe87c3c654345485b12d39b9f);
+        
+    
+        var popup_fb277072d08ac3aa2f6ef2b8b6060d1c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_43502f95bcc43846643bcd4e0cbaf94c = $(`<div id="html_43502f95bcc43846643bcd4e0cbaf94c" style="width: 100.0%; height: 100.0%;">                 <b>SOLVAY</b><br>                 Commune : Tavaux<br>                 Région : Bourgogne-Franche-Comté<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_fb277072d08ac3aa2f6ef2b8b6060d1c.setContent(html_43502f95bcc43846643bcd4e0cbaf94c);
+            
+        
+
+        marker_3e6a7c858bcbc0884c0ca7e179cf288f.bindPopup(popup_fb277072d08ac3aa2f6ef2b8b6060d1c)
+        ;
+
+        
+    
+    
+            var marker_e2bbc8d599eba46ef6a1a3c41b44d92a = L.marker(
+                [48.061714, -1.380992],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_47546a814c35220098f4fbae499e1efc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e2bbc8d599eba46ef6a1a3c41b44d92a.setIcon(icon_47546a814c35220098f4fbae499e1efc);
+        
+    
+        var popup_65bd621c82f0756a159cf5050662f07e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1b2e5ddc14896d9ca7de3b7f96233acd = $(`<div id="html_1b2e5ddc14896d9ca7de3b7f96233acd" style="width: 100.0%; height: 100.0%;">                 <b>SNCF</b><br>                 Commune : Rennes<br>                 Région : Bretagne<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_65bd621c82f0756a159cf5050662f07e.setContent(html_1b2e5ddc14896d9ca7de3b7f96233acd);
+            
+        
+
+        marker_e2bbc8d599eba46ef6a1a3c41b44d92a.bindPopup(popup_65bd621c82f0756a159cf5050662f07e)
+        ;
+
+        
+    
+    
+            var marker_f54cccb9d1ce16e2f2e1f9e968b48d55 = L.marker(
+                [48.1127194, -1.60555277],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_78af16fdea8b0deb123f5d9ab239ea55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f54cccb9d1ce16e2f2e1f9e968b48d55.setIcon(icon_78af16fdea8b0deb123f5d9ab239ea55);
+        
+    
+        var popup_4948063e01fc976f11ea6f25fdbe5098 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b4774bf32ff0599bf918d45d0bd6d80 = $(`<div id="html_4b4774bf32ff0599bf918d45d0bd6d80" style="width: 100.0%; height: 100.0%;">                 <b>Sysoco/Axians</b><br>                 Commune : Bréal-sous-Montfort<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_4948063e01fc976f11ea6f25fdbe5098.setContent(html_4b4774bf32ff0599bf918d45d0bd6d80);
+            
+        
+
+        marker_f54cccb9d1ce16e2f2e1f9e968b48d55.bindPopup(popup_4948063e01fc976f11ea6f25fdbe5098)
+        ;
+
+        
+    
+    
+            var marker_141551da0d26e302455045dde78dea98 = L.marker(
+                [48.785814, 2.044985],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_e6db0c441658282f986cccc2c2e2e827 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_141551da0d26e302455045dde78dea98.setIcon(icon_e6db0c441658282f986cccc2c2e2e827);
+        
+    
+        var popup_fa58055a5ac1607873540131bfe9068c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_526735498871e69c1f55440081294562 = $(`<div id="html_526735498871e69c1f55440081294562" style="width: 100.0%; height: 100.0%;">                 <b>ILS TECHNOLOGIES</b><br>                 Commune : Montigny-le-Bretonneux<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_fa58055a5ac1607873540131bfe9068c.setContent(html_526735498871e69c1f55440081294562);
+            
+        
+
+        marker_141551da0d26e302455045dde78dea98.bindPopup(popup_fa58055a5ac1607873540131bfe9068c)
+        ;
+
+        
+    
+    
+            var marker_a4e8ada9da9df7d7c4caf352a92c3489 = L.marker(
+                [48.470902, 2.0243],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_c2cdeaf2dc1bdabcf358017797045b81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a4e8ada9da9df7d7c4caf352a92c3489.setIcon(icon_c2cdeaf2dc1bdabcf358017797045b81);
+        
+    
+        var popup_4ad06ee357bd33186c79aac193c98e6a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8c902f9bac6d5de7fbeb996f36d28576 = $(`<div id="html_8c902f9bac6d5de7fbeb996f36d28576" style="width: 100.0%; height: 100.0%;">                 <b>ISIS Logiciels et Systèmes</b><br>                 Commune : Montigny-le-Bretonneux<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_4ad06ee357bd33186c79aac193c98e6a.setContent(html_8c902f9bac6d5de7fbeb996f36d28576);
+            
+        
+
+        marker_a4e8ada9da9df7d7c4caf352a92c3489.bindPopup(popup_4ad06ee357bd33186c79aac193c98e6a)
+        ;
+
+        
+    
+    
+            var marker_31f6035a10e2f13ac84d8444828050e0 = L.marker(
+                [43.618619, 1.362169],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_b4481278f880bfa0bab4f88511c6f090 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_31f6035a10e2f13ac84d8444828050e0.setIcon(icon_b4481278f880bfa0bab4f88511c6f090);
+        
+    
+        var popup_411986be2b85697c529b508a7f4646b6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b6a6f4f0b8de09464732a9e089983cdb = $(`<div id="html_b6a6f4f0b8de09464732a9e089983cdb" style="width: 100.0%; height: 100.0%;">                 <b>Airbus Operations SAS</b><br>                 Commune : Colomiers<br>                 Région : Occitanie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_411986be2b85697c529b508a7f4646b6.setContent(html_b6a6f4f0b8de09464732a9e089983cdb);
+            
+        
+
+        marker_31f6035a10e2f13ac84d8444828050e0.bindPopup(popup_411986be2b85697c529b508a7f4646b6)
+        ;
+
+        
+    
+    
+            var marker_3f8f9ed3fa09640da73e9f043043fad9 = L.marker(
+                [48.635018, -0.955043],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_3767a504a1fedf237e5f97810dc9e02b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3f8f9ed3fa09640da73e9f043043fad9.setIcon(icon_3767a504a1fedf237e5f97810dc9e02b);
+        
+    
+        var popup_2056bad522be21845af2c9827f963942 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c6a36e6d7c9b4aa185d1d035731d3b54 = $(`<div id="html_c6a36e6d7c9b4aa185d1d035731d3b54" style="width: 100.0%; height: 100.0%;">                 <b>Acome</b><br>                 Commune : Romagny Fontenay<br>                 Région : Normandie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_2056bad522be21845af2c9827f963942.setContent(html_c6a36e6d7c9b4aa185d1d035731d3b54);
+            
+        
+
+        marker_3f8f9ed3fa09640da73e9f043043fad9.bindPopup(popup_2056bad522be21845af2c9827f963942)
+        ;
+
+        
+    
+    
+            var marker_89065b6f4aa2c8d3dda25a640d987770 = L.marker(
+                [48.381431, -0.572283],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_102f480042b1800be2525c46270bb4b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_89065b6f4aa2c8d3dda25a640d987770.setIcon(icon_102f480042b1800be2525c46270bb4b1);
+        
+    
+        var popup_004cdbf562a3966fd5fc435df4cdb7de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b656b7b786d7789d432994e7f004e5ec = $(`<div id="html_b656b7b786d7789d432994e7f004e5ec" style="width: 100.0%; height: 100.0%;">                 <b>Acome</b><br>                 Commune : Romagny Fontenay<br>                 Région : Normandie<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_004cdbf562a3966fd5fc435df4cdb7de.setContent(html_b656b7b786d7789d432994e7f004e5ec);
+            
+        
+
+        marker_89065b6f4aa2c8d3dda25a640d987770.bindPopup(popup_004cdbf562a3966fd5fc435df4cdb7de)
+        ;
+
+        
+    
+    
+            var marker_75a3cef492e4bf268b950e86769d56fd = L.marker(
+                [48.7284974, 1.9286383],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_209a2d787c9ec7c339da5a35f433e62c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_75a3cef492e4bf268b950e86769d56fd.setIcon(icon_209a2d787c9ec7c339da5a35f433e62c);
+        
+    
+        var popup_e8455f35a9ff8c84a022e4bd867fa9d6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a08dbe7403195da297be6fc031a28a50 = $(`<div id="html_a08dbe7403195da297be6fc031a28a50" style="width: 100.0%; height: 100.0%;">                 <b>Hectar</b><br>                 Commune : Lévis-Saint-Nom<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_e8455f35a9ff8c84a022e4bd867fa9d6.setContent(html_a08dbe7403195da297be6fc031a28a50);
+            
+        
+
+        marker_75a3cef492e4bf268b950e86769d56fd.bindPopup(popup_e8455f35a9ff8c84a022e4bd867fa9d6)
+        ;
+
+        
+    
+    
+            var marker_8734cab148eeb93c2cdb104d8bed528a = L.marker(
+                [48.7283333333333, 1.92861111111111],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_f6c637ecfdb4ff1983aceab635317f64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8734cab148eeb93c2cdb104d8bed528a.setIcon(icon_f6c637ecfdb4ff1983aceab635317f64);
+        
+    
+        var popup_f1af0cf3906e35d6d4ea4032660ad2e8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32d4017e1c9b56e6a015e19236b92f0a = $(`<div id="html_32d4017e1c9b56e6a015e19236b92f0a" style="width: 100.0%; height: 100.0%;">                 <b>Hectar</b><br>                 Commune : Lévis-Saint-Nom<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_f1af0cf3906e35d6d4ea4032660ad2e8.setContent(html_32d4017e1c9b56e6a015e19236b92f0a);
+            
+        
+
+        marker_8734cab148eeb93c2cdb104d8bed528a.bindPopup(popup_f1af0cf3906e35d6d4ea4032660ad2e8)
+        ;
+
+        
+    
+    
+            var marker_f63f92c594e2ae75b3d722d971f5e337 = L.marker(
+                [43.6236111111111, 1.48777777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_ff761466d0ad8c9bd604aa82c491708b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f63f92c594e2ae75b3d722d971f5e337.setIcon(icon_ff761466d0ad8c9bd604aa82c491708b);
+        
+    
+        var popup_2686bbd73f399ecfc51d8e3f4d71d7e9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aee0b361148fb9b8df5d9dce4b72c51b = $(`<div id="html_aee0b361148fb9b8df5d9dce4b72c51b" style="width: 100.0%; height: 100.0%;">                 <b>Orange</b><br>                 Commune : Balma<br>                 Région : Occitanie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_2686bbd73f399ecfc51d8e3f4d71d7e9.setContent(html_aee0b361148fb9b8df5d9dce4b72c51b);
+            
+        
+
+        marker_f63f92c594e2ae75b3d722d971f5e337.bindPopup(popup_2686bbd73f399ecfc51d8e3f4d71d7e9)
+        ;
+
+        
+    
+    
+            var marker_0dd17b88fefdc7f891989c1511b86ab2 = L.marker(
+                [45.7796714, 4.75074],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_c0697c241dc1ca81a05b11f9dad4a298 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0dd17b88fefdc7f891989c1511b86ab2.setIcon(icon_c0697c241dc1ca81a05b11f9dad4a298);
+        
+    
+        var popup_563cee97161b8ba71b62ecadde700bb1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ce4af97aa077b88b0ec0f5e80b68582 = $(`<div id="html_5ce4af97aa077b88b0ec0f5e80b68582" style="width: 100.0%; height: 100.0%;">                 <b>Orange</b><br>                 Commune : Charbonnières-les-Bains<br>                 Région : Auvergne-Rhône-Alpes<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_563cee97161b8ba71b62ecadde700bb1.setContent(html_5ce4af97aa077b88b0ec0f5e80b68582);
+            
+        
+
+        marker_0dd17b88fefdc7f891989c1511b86ab2.bindPopup(popup_563cee97161b8ba71b62ecadde700bb1)
+        ;
+
+        
+    
+    
+            var marker_4be3b6bd96a34b924a857738dd6c7fb3 = L.marker(
+                [48.3413889, -1.18],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_e51e83fa3baf1de3369f1017808191af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4be3b6bd96a34b924a857738dd6c7fb3.setIcon(icon_e51e83fa3baf1de3369f1017808191af);
+        
+    
+        var popup_95597f64c34e547f8f9d639c74efce7f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f509f450f798aa437ef626fc67a9058d = $(`<div id="html_f509f450f798aa437ef626fc67a9058d" style="width: 100.0%; height: 100.0%;">                 <b>Safran</b><br>                 Commune : Fougères<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_95597f64c34e547f8f9d639c74efce7f.setContent(html_f509f450f798aa437ef626fc67a9058d);
+            
+        
+
+        marker_4be3b6bd96a34b924a857738dd6c7fb3.bindPopup(popup_95597f64c34e547f8f9d639c74efce7f)
+        ;
+
+        
+    
+    
+            var marker_422ba02b6b6002007443754536488646 = L.marker(
+                [43.5634781, 1.46551944],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_908cf412405f5acb7b08e7a95646003a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_422ba02b6b6002007443754536488646.setIcon(icon_908cf412405f5acb7b08e7a95646003a);
+        
+    
+        var popup_83ea9fbf151e9e7d927a0be067c9a295 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_09cf7a118ce1e923cc49e4112a544a1f = $(`<div id="html_09cf7a118ce1e923cc49e4112a544a1f" style="width: 100.0%; height: 100.0%;">                 <b>Université Paul-Sabatier</b><br>                 Commune : Bellesserre<br>                 Région : Occitanie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_83ea9fbf151e9e7d927a0be067c9a295.setContent(html_09cf7a118ce1e923cc49e4112a544a1f);
+            
+        
+
+        marker_422ba02b6b6002007443754536488646.bindPopup(popup_83ea9fbf151e9e7d927a0be067c9a295)
+        ;
+
+        
+    
+    
+            var marker_198582e22ac0db537f86f79bde265902 = L.marker(
+                [45.64523, 5.871415],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_d1be26f3ed9e5f6051c522ebb2e39bcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_198582e22ac0db537f86f79bde265902.setIcon(icon_d1be26f3ed9e5f6051c522ebb2e39bcf);
+        
+    
+        var popup_1e2f2e300262bb4497d1ada0f8d6bc22 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d7851e996abf3ca65f4fda6cbc2b8aa5 = $(`<div id="html_d7851e996abf3ca65f4fda6cbc2b8aa5" style="width: 100.0%; height: 100.0%;">                 <b>Numerisat</b><br>                 Commune : Le Bourget-du-Lac<br>                 Région : Auvergne-Rhône-Alpes<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_1e2f2e300262bb4497d1ada0f8d6bc22.setContent(html_d7851e996abf3ca65f4fda6cbc2b8aa5);
+            
+        
+
+        marker_198582e22ac0db537f86f79bde265902.bindPopup(popup_1e2f2e300262bb4497d1ada0f8d6bc22)
+        ;
+
+        
+    
+    
+            var marker_0eaad537c50fcded4c2a9df80a5ea6e4 = L.marker(
+                [48.8972222222222, 2.17],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_6abd62ffe74dd2c36ebfa4eda11cd89d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0eaad537c50fcded4c2a9df80a5ea6e4.setIcon(icon_6abd62ffe74dd2c36ebfa4eda11cd89d);
+        
+    
+        var popup_5753856635dbda96e8e0c36f018a845d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd63e6cda09ed20837a70440bd6670c5 = $(`<div id="html_bd63e6cda09ed20837a70440bd6670c5" style="width: 100.0%; height: 100.0%;">                 <b>EDF</b><br>                 Commune : Chatou<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_5753856635dbda96e8e0c36f018a845d.setContent(html_bd63e6cda09ed20837a70440bd6670c5);
+            
+        
+
+        marker_0eaad537c50fcded4c2a9df80a5ea6e4.bindPopup(popup_5753856635dbda96e8e0c36f018a845d)
+        ;
+
+        
+    
+    
+            var marker_bba02f770289152d8b1169d039961ec4 = L.marker(
+                [48.8427139, 2.31978527],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_b4cd48d806bc1ac125547d3b4bbd6fe8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_bba02f770289152d8b1169d039961ec4.setIcon(icon_b4cd48d806bc1ac125547d3b4bbd6fe8);
+        
+    
+        var popup_f10873368818a0be552b090abcc0b362 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7cad129833833c23afc2ee334d9a44e6 = $(`<div id="html_7cad129833833c23afc2ee334d9a44e6" style="width: 100.0%; height: 100.0%;">                 <b>Athonet</b><br>                 Commune : Paris<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_f10873368818a0be552b090abcc0b362.setContent(html_7cad129833833c23afc2ee334d9a44e6);
+            
+        
+
+        marker_bba02f770289152d8b1169d039961ec4.bindPopup(popup_f10873368818a0be552b090abcc0b362)
+        ;
+
+        
+    
+    
+            var marker_26561d2eac0af262aee2783c3d750a6b = L.marker(
+                [48.503878, 2.191201],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_2b7b6c9a38fe04e378c311403d5311c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_26561d2eac0af262aee2783c3d750a6b.setIcon(icon_2b7b6c9a38fe04e378c311403d5311c4);
+        
+    
+        var popup_53fdef5178bf5d579e6f260d8637df8d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_da33f12e6e8b12b474d121b772722224 = $(`<div id="html_da33f12e6e8b12b474d121b772722224" style="width: 100.0%; height: 100.0%;">                 <b>Athonet</b><br>                 Commune : Paris<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_53fdef5178bf5d579e6f260d8637df8d.setContent(html_da33f12e6e8b12b474d121b772722224);
+            
+        
+
+        marker_26561d2eac0af262aee2783c3d750a6b.bindPopup(popup_53fdef5178bf5d579e6f260d8637df8d)
+        ;
+
+        
+    
+    
+            var marker_283ff329814785c5a8d7312897f6c152 = L.marker(
+                [48.471003, 2.053509],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_713e24fd552fa843922e35d8680f4d7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_283ff329814785c5a8d7312897f6c152.setIcon(icon_713e24fd552fa843922e35d8680f4d7b);
+        
+    
+        var popup_450f4ec7a85f9e178b521866499a131c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e90bfd965d2515808dd7612fe0743b7e = $(`<div id="html_e90bfd965d2515808dd7612fe0743b7e" style="width: 100.0%; height: 100.0%;">                 <b>Vedecom</b><br>                 Commune : Versailles<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_450f4ec7a85f9e178b521866499a131c.setContent(html_e90bfd965d2515808dd7612fe0743b7e);
+            
+        
+
+        marker_283ff329814785c5a8d7312897f6c152.bindPopup(popup_450f4ec7a85f9e178b521866499a131c)
+        ;
+
+        
+    
+    
+            var marker_6d4ba144ead8aeafb94533c9d19e1d07 = L.marker(
+                [48.1210356, -1.6954197],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_dfe20c36c6e524953aa3b3dfe362d233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6d4ba144ead8aeafb94533c9d19e1d07.setIcon(icon_dfe20c36c6e524953aa3b3dfe362d233);
+        
+    
+        var popup_13087360d820da3856a7b2a128d53995 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73810d5f704b3bbb7c4cf4d5e449f8c0 = $(`<div id="html_73810d5f704b3bbb7c4cf4d5e449f8c0" style="width: 100.0%; height: 100.0%;">                 <b>B-COM</b><br>                 Commune : Rennes<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_13087360d820da3856a7b2a128d53995.setContent(html_73810d5f704b3bbb7c4cf4d5e449f8c0);
+            
+        
+
+        marker_6d4ba144ead8aeafb94533c9d19e1d07.bindPopup(popup_13087360d820da3856a7b2a128d53995)
+        ;
+
+        
+    
+    
+            var marker_166808c9751c95e7a5d0d2e3d1150b96 = L.marker(
+                [43.4973889, 5.34205555],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_d2b1673b73eaa81fa67d31b9a2355bab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_166808c9751c95e7a5d0d2e3d1150b96.setIcon(icon_d2b1673b73eaa81fa67d31b9a2355bab);
+        
+    
+        var popup_299694c0d71688726feed65fba727ba7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4fb7422532c3b7de800498ddbb7da161 = $(`<div id="html_4fb7422532c3b7de800498ddbb7da161" style="width: 100.0%; height: 100.0%;">                 <b>Unitel Technologies</b><br>                 Commune : Aix-en-Provence<br>                 Région : Provence-Alpes-Côte d'Azur<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_299694c0d71688726feed65fba727ba7.setContent(html_4fb7422532c3b7de800498ddbb7da161);
+            
+        
+
+        marker_166808c9751c95e7a5d0d2e3d1150b96.bindPopup(popup_299694c0d71688726feed65fba727ba7)
+        ;
+
+        
+    
+    
+            var marker_f542666d875828f0f1d8f5344cf2fc60 = L.marker(
+                [48.7605555555556, -3.46722222222222],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_d5897016b2d72a395b94a564e3b9f1fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f542666d875828f0f1d8f5344cf2fc60.setIcon(icon_d5897016b2d72a395b94a564e3b9f1fe);
+        
+    
+        var popup_4c7e1bec5de867b7364fc865b4ca85d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a6844fc8ba865d2aacef579deb88cf37 = $(`<div id="html_a6844fc8ba865d2aacef579deb88cf37" style="width: 100.0%; height: 100.0%;">                 <b>Qualcomm</b><br>                 Commune : Lannion<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_4c7e1bec5de867b7364fc865b4ca85d5.setContent(html_a6844fc8ba865d2aacef579deb88cf37);
+            
+        
+
+        marker_f542666d875828f0f1d8f5344cf2fc60.bindPopup(popup_4c7e1bec5de867b7364fc865b4ca85d5)
+        ;
+
+        
+    
+    
+            var marker_500881b5b4d46d77722ae08598cef03b = L.marker(
+                [48.8666666666667, 2.35666666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_114a52c78c5c5aa72ba2d9f8547edec5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_500881b5b4d46d77722ae08598cef03b.setIcon(icon_114a52c78c5c5aa72ba2d9f8547edec5);
+        
+    
+        var popup_f5ffd5dd04a84ae8ab958ed443af5389 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a8973ab3721e4212f42cab99bd102b21 = $(`<div id="html_a8973ab3721e4212f42cab99bd102b21" style="width: 100.0%; height: 100.0%;">                 <b>Conservatoire National des Arts et Métiers</b><br>                 Commune : Paris<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_f5ffd5dd04a84ae8ab958ed443af5389.setContent(html_a8973ab3721e4212f42cab99bd102b21);
+            
+        
+
+        marker_500881b5b4d46d77722ae08598cef03b.bindPopup(popup_f5ffd5dd04a84ae8ab958ed443af5389)
+        ;
+
+        
+    
+    
+            var marker_ff3551e28df9281acb973eba5f876626 = L.marker(
+                [48.7583333333333, -3.45611111111111],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_5b26bf612253ded515abff2435dff1e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ff3551e28df9281acb973eba5f876626.setIcon(icon_5b26bf612253ded515abff2435dff1e1);
+        
+    
+        var popup_327522e5f7db3f9fda519b559fe3df6c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a87ebf4f1c49ae2af5e95b77f6b76d38 = $(`<div id="html_a87ebf4f1c49ae2af5e95b77f6b76d38" style="width: 100.0%; height: 100.0%;">                 <b>Nokia Networks France</b><br>                 Commune : Lannion<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_327522e5f7db3f9fda519b559fe3df6c.setContent(html_a87ebf4f1c49ae2af5e95b77f6b76d38);
+            
+        
+
+        marker_ff3551e28df9281acb973eba5f876626.bindPopup(popup_327522e5f7db3f9fda519b559fe3df6c)
+        ;
+
+        
+    
+    
+            var marker_a27882cf9cbdef06e473e780a50e40a5 = L.marker(
+                [49.322500000000005, 6.093611111111111],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_99f407c3db0c6560524c3624490f662d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a27882cf9cbdef06e473e780a50e40a5.setIcon(icon_99f407c3db0c6560524c3624490f662d);
+        
+    
+        var popup_64c01d875dc8aa95041a78b0fe84a917 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ef722e24d2e73d5509d32d1b903fd30b = $(`<div id="html_ef722e24d2e73d5509d32d1b903fd30b" style="width: 100.0%; height: 100.0%;">                 <b>ArcelorMittal France</b><br>                 Commune : Florange<br>                 Région : Grand Est<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_64c01d875dc8aa95041a78b0fe84a917.setContent(html_ef722e24d2e73d5509d32d1b903fd30b);
+            
+        
+
+        marker_a27882cf9cbdef06e473e780a50e40a5.bindPopup(popup_64c01d875dc8aa95041a78b0fe84a917)
+        ;
+
+        
+    
+    
+            var marker_c644f7d31c617029e980a82b137d48ac = L.marker(
+                [48.8219444444444, 2.36861111111111],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_76fc5923dfcb50af92abb1fa6d2c0f80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c644f7d31c617029e980a82b137d48ac.setIcon(icon_76fc5923dfcb50af92abb1fa6d2c0f80);
+        
+    
+        var popup_4d63ad434c4e2aded2ce719bac340971 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8a6ae6257c93fba4114ed12161a2d4d1 = $(`<div id="html_8a6ae6257c93fba4114ed12161a2d4d1" style="width: 100.0%; height: 100.0%;">                 <b>SNCF</b><br>                 Commune : Paris<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_4d63ad434c4e2aded2ce719bac340971.setContent(html_8a6ae6257c93fba4114ed12161a2d4d1);
+            
+        
+
+        marker_c644f7d31c617029e980a82b137d48ac.bindPopup(popup_4d63ad434c4e2aded2ce719bac340971)
+        ;
+
+        
+    
+    
+            var marker_db17447aaa2d7122ec5e0c84d4d380d6 = L.marker(
+                [43.5927777777778, 1.435],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_80dc599a24d4c6ce05947f1d9b59b347 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_db17447aaa2d7122ec5e0c84d4d380d6.setIcon(icon_80dc599a24d4c6ce05947f1d9b59b347);
+        
+    
+        var popup_024ba0289d508d0b1a8d26c0b5701273 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c6b3ddba1dbcc93f999849f9dd6dcc02 = $(`<div id="html_c6b3ddba1dbcc93f999849f9dd6dcc02" style="width: 100.0%; height: 100.0%;">                 <b>Alsatis</b><br>                 Commune : Toulouse<br>                 Région : Occitanie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_024ba0289d508d0b1a8d26c0b5701273.setContent(html_c6b3ddba1dbcc93f999849f9dd6dcc02);
+            
+        
+
+        marker_db17447aaa2d7122ec5e0c84d4d380d6.bindPopup(popup_024ba0289d508d0b1a8d26c0b5701273)
+        ;
+
+        
+    
+    
+            var marker_651be730e55fcf6e54acd9b56a3825fa = L.marker(
+                [43.6094444444444, 1.39944444444444],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_d18c21dbab05ef06be7b97c2183846c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_651be730e55fcf6e54acd9b56a3825fa.setIcon(icon_d18c21dbab05ef06be7b97c2183846c8);
+        
+    
+        var popup_b6f7ca5dc3418a274fd15fdd5a0fb1cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e40c7425e9860c47e9a7f12c2d5ec1a2 = $(`<div id="html_e40c7425e9860c47e9a7f12c2d5ec1a2" style="width: 100.0%; height: 100.0%;">                 <b>Alsatis</b><br>                 Commune : Toulouse<br>                 Région : Occitanie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_b6f7ca5dc3418a274fd15fdd5a0fb1cb.setContent(html_e40c7425e9860c47e9a7f12c2d5ec1a2);
+            
+        
+
+        marker_651be730e55fcf6e54acd9b56a3825fa.bindPopup(popup_b6f7ca5dc3418a274fd15fdd5a0fb1cb)
+        ;
+
+        
+    
+    
+            var marker_18c6cc7128f12083cbe28edb117215b8 = L.marker(
+                [49.0094444444444, 2.55916666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_60aa03e025c8a9f61aacd8558c73ca60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_18c6cc7128f12083cbe28edb117215b8.setIcon(icon_60aa03e025c8a9f61aacd8558c73ca60);
+        
+    
+        var popup_ebd8d68dcef1c4059f0c71c1f4497c83 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_644e164e7e40af2e619dde4cc2ef95b1 = $(`<div id="html_644e164e7e40af2e619dde4cc2ef95b1" style="width: 100.0%; height: 100.0%;">                 <b>Hub One</b><br>                 Commune : Tremblay-en-France<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_ebd8d68dcef1c4059f0c71c1f4497c83.setContent(html_644e164e7e40af2e619dde4cc2ef95b1);
+            
+        
+
+        marker_18c6cc7128f12083cbe28edb117215b8.bindPopup(popup_ebd8d68dcef1c4059f0c71c1f4497c83)
+        ;
+
+        
+    
+    
+            var marker_1c663ffd7f0a49c4e577030ddf78c24d = L.marker(
+                [43.6386111111111, 1.555],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_62a927d400fd69c7846f45c14d5306c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1c663ffd7f0a49c4e577030ddf78c24d.setIcon(icon_62a927d400fd69c7846f45c14d5306c2);
+        
+    
+        var popup_8f93ec685492af59676b7e0752a4c78e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ea3ac3fa19559611d0dbecacf93a7eaa = $(`<div id="html_ea3ac3fa19559611d0dbecacf93a7eaa" style="width: 100.0%; height: 100.0%;">                 <b>Alsatis</b><br>                 Commune : Toulouse<br>                 Région : Occitanie<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_8f93ec685492af59676b7e0752a4c78e.setContent(html_ea3ac3fa19559611d0dbecacf93a7eaa);
+            
+        
+
+        marker_1c663ffd7f0a49c4e577030ddf78c24d.bindPopup(popup_8f93ec685492af59676b7e0752a4c78e)
+        ;
+
+        
+    
+    
+            var marker_8d5b03cd90868adcbd6f5ed5525b8f18 = L.marker(
+                [45.7230555555556, 5.06944444444444],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_f31e1e3b6289c949427b811f6d066a7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8d5b03cd90868adcbd6f5ed5525b8f18.setIcon(icon_f31e1e3b6289c949427b811f6d066a7d);
+        
+    
+        var popup_5b9d3d36454dc527edd4c4e353909b79 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ed040260c90a772f164f497909c5231 = $(`<div id="html_7ed040260c90a772f164f497909c5231" style="width: 100.0%; height: 100.0%;">                 <b>Stanley Robotics</b><br>                 Commune : Colombier-Saugnieu<br>                 Région : Auvergne-Rhône-Alpes<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_5b9d3d36454dc527edd4c4e353909b79.setContent(html_7ed040260c90a772f164f497909c5231);
+            
+        
+
+        marker_8d5b03cd90868adcbd6f5ed5525b8f18.bindPopup(popup_5b9d3d36454dc527edd4c4e353909b79)
+        ;
+
+        
+    
+    
+            var marker_a2de4ae1c12c760c06e915c0e82f3786 = L.marker(
+                [47.9858333333333, -1.74333333333333],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_220760cdfc799e9b60c2f9a395c6ec09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a2de4ae1c12c760c06e915c0e82f3786.setIcon(icon_220760cdfc799e9b60c2f9a395c6ec09);
+        
+    
+        var popup_84a2169bd11ec7e86506c81193eb84b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0c9c67c90b6da7efce3862a36d515771 = $(`<div id="html_0c9c67c90b6da7efce3862a36d515771" style="width: 100.0%; height: 100.0%;">                 <b>B-COM</b><br>                 Commune : Bruz<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_84a2169bd11ec7e86506c81193eb84b5.setContent(html_0c9c67c90b6da7efce3862a36d515771);
+            
+        
+
+        marker_a2de4ae1c12c760c06e915c0e82f3786.bindPopup(popup_84a2169bd11ec7e86506c81193eb84b5)
+        ;
+
+        
+    
+    
+            var marker_aef5892b26ebd97eb35149df06f543c3 = L.marker(
+                [46.0747222222222, 6.57027777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_c5b2d6af49a5b909f13d90e4b85c1a6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_aef5892b26ebd97eb35149df06f543c3.setIcon(icon_c5b2d6af49a5b909f13d90e4b85c1a6b);
+        
+    
+        var popup_383ddac4b4680c7acbea6a385a370f71 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_df7b58bfde7e5ad250e969c63a25b548 = $(`<div id="html_df7b58bfde7e5ad250e969c63a25b548" style="width: 100.0%; height: 100.0%;">                 <b>Alsatis</b><br>                 Commune : Cluses<br>                 Région : Auvergne-Rhône-Alpes<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_383ddac4b4680c7acbea6a385a370f71.setContent(html_df7b58bfde7e5ad250e969c63a25b548);
+            
+        
+
+        marker_aef5892b26ebd97eb35149df06f543c3.bindPopup(popup_383ddac4b4680c7acbea6a385a370f71)
+        ;
+
+        
+    
+    
+            var marker_e62b5ee75e2e94b89385fa9b72f4c0f6 = L.marker(
+                [47.4563888888889, -0.537777777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_2f370948a9ce7abeb504fc8152ed1cca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e62b5ee75e2e94b89385fa9b72f4c0f6.setIcon(icon_2f370948a9ce7abeb504fc8152ed1cca);
+        
+    
+        var popup_ca78d7e4203dc794b9a08c3213586403 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b181c0148b368e3ea6307eb2a063fe92 = $(`<div id="html_b181c0148b368e3ea6307eb2a063fe92" style="width: 100.0%; height: 100.0%;">                 <b>Alsatis</b><br>                 Commune : Angers<br>                 Région : Pays de la Loire<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_ca78d7e4203dc794b9a08c3213586403.setContent(html_b181c0148b368e3ea6307eb2a063fe92);
+            
+        
+
+        marker_e62b5ee75e2e94b89385fa9b72f4c0f6.bindPopup(popup_ca78d7e4203dc794b9a08c3213586403)
+        ;
+
+        
+    
+    
+            var marker_0e460295ff734b39df01df332f5bc37d = L.marker(
+                [48.8972222222222, 2.17],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_76913974d2d91b59c85ebfdd16313def = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0e460295ff734b39df01df332f5bc37d.setIcon(icon_76913974d2d91b59c85ebfdd16313def);
+        
+    
+        var popup_d2d79bdb73073463bb99699ec2628f8c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_045e698d69d31ca7857fd0738a0d38a6 = $(`<div id="html_045e698d69d31ca7857fd0738a0d38a6" style="width: 100.0%; height: 100.0%;">                 <b>EDF</b><br>                 Commune : Chatou<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_d2d79bdb73073463bb99699ec2628f8c.setContent(html_045e698d69d31ca7857fd0738a0d38a6);
+            
+        
+
+        marker_0e460295ff734b39df01df332f5bc37d.bindPopup(popup_d2d79bdb73073463bb99699ec2628f8c)
+        ;
+
+        
+    
+    
+            var marker_7d8091c84ffaeb383e8668bda53cafcd = L.marker(
+                [48.89722222222222, 2.17],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_83d95d95a588db6df6ac8957984e4f68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_7d8091c84ffaeb383e8668bda53cafcd.setIcon(icon_83d95d95a588db6df6ac8957984e4f68);
+        
+    
+        var popup_5dab928e85a0fe9080e54a1b9b45a399 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_401d932a668127e920048f512ce62e5f = $(`<div id="html_401d932a668127e920048f512ce62e5f" style="width: 100.0%; height: 100.0%;">                 <b>EDF</b><br>                 Commune : Chatou<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_5dab928e85a0fe9080e54a1b9b45a399.setContent(html_401d932a668127e920048f512ce62e5f);
+            
+        
+
+        marker_7d8091c84ffaeb383e8668bda53cafcd.bindPopup(popup_5dab928e85a0fe9080e54a1b9b45a399)
+        ;
+
+        
+    
+    
+            var marker_b7b2115c228016c2dc7a90061096d000 = L.marker(
+                [47.7236111111111, -3.38833333333333],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_1fb8993cdbec00f558a51e90558a9e70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b7b2115c228016c2dc7a90061096d000.setIcon(icon_1fb8993cdbec00f558a51e90558a9e70);
+        
+    
+        var popup_7383ccc9d7954a2cce1d24b44ba3a900 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_686d110490e0d7ac287bb686f2b893ac = $(`<div id="html_686d110490e0d7ac287bb686f2b893ac" style="width: 100.0%; height: 100.0%;">                 <b>Fives Xcella</b><br>                 Commune : Larmor-Plage<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_7383ccc9d7954a2cce1d24b44ba3a900.setContent(html_686d110490e0d7ac287bb686f2b893ac);
+            
+        
+
+        marker_b7b2115c228016c2dc7a90061096d000.bindPopup(popup_7383ccc9d7954a2cce1d24b44ba3a900)
+        ;
+
+        
+    
+    
+            var marker_c15491ce8f670c107c5d418ef238ed6d = L.marker(
+                [49.4769444444444, 1.09138888888889],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_fcec6e9445cc2c8ab73bc897c94ca770 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c15491ce8f670c107c5d418ef238ed6d.setIcon(icon_fcec6e9445cc2c8ab73bc897c94ca770);
+        
+    
+        var popup_ccccb7e3d82dd22b9ec98391d08322ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0365381757126541a40be331b93650da = $(`<div id="html_0365381757126541a40be331b93650da" style="width: 100.0%; height: 100.0%;">                 <b>Airmob Infra Full</b><br>                 Commune : Mont-Saint-Aignan<br>                 Région : Normandie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_ccccb7e3d82dd22b9ec98391d08322ed.setContent(html_0365381757126541a40be331b93650da);
+            
+        
+
+        marker_c15491ce8f670c107c5d418ef238ed6d.bindPopup(popup_ccccb7e3d82dd22b9ec98391d08322ed)
+        ;
+
+        
+    
+    
+            var marker_453c6188e335c03bdf3c54b77821b39a = L.marker(
+                [49.2597222222222, 1.18694444444444],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_9acbe9e0db56fc02ca1011b3f981eea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_453c6188e335c03bdf3c54b77821b39a.setIcon(icon_9acbe9e0db56fc02ca1011b3f981eea2);
+        
+    
+        var popup_2678c7cfd311f77fdea812771a0e74ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e7009db00ad77afdb985e702e314b447 = $(`<div id="html_e7009db00ad77afdb985e702e314b447" style="width: 100.0%; height: 100.0%;">                 <b>Airmob Infra Full</b><br>                 Commune : Val-de-Reuil<br>                 Région : Normandie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_2678c7cfd311f77fdea812771a0e74ad.setContent(html_e7009db00ad77afdb985e702e314b447);
+            
+        
+
+        marker_453c6188e335c03bdf3c54b77821b39a.bindPopup(popup_2678c7cfd311f77fdea812771a0e74ad)
+        ;
+
+        
+    
+    
+            var marker_d82114db0f4bdfd729fa56cd9b970cd1 = L.marker(
+                [43.6027777777778, 1.45416666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_7798759b79bc664955634d18c4eafbd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d82114db0f4bdfd729fa56cd9b970cd1.setIcon(icon_7798759b79bc664955634d18c4eafbd7);
+        
+    
+        var popup_ceffc7ddb7e938c4800bb5baaad99a58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_830b48afc022f8d2ac9f9aaf56cd0574 = $(`<div id="html_830b48afc022f8d2ac9f9aaf56cd0574" style="width: 100.0%; height: 100.0%;">                 <b>Airmob Infra Full</b><br>                 Commune : Toulouse<br>                 Région : Occitanie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_ceffc7ddb7e938c4800bb5baaad99a58.setContent(html_830b48afc022f8d2ac9f9aaf56cd0574);
+            
+        
+
+        marker_d82114db0f4bdfd729fa56cd9b970cd1.bindPopup(popup_ceffc7ddb7e938c4800bb5baaad99a58)
+        ;
+
+        
+    
+    
+            var marker_3abb8727e3d01874147c6981d30cb87e = L.marker(
+                [48.8930555555556, 2.24083333333333],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_9e4772d6ee10ced8ca5aa87500ce77ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3abb8727e3d01874147c6981d30cb87e.setIcon(icon_9e4772d6ee10ced8ca5aa87500ce77ce);
+        
+    
+        var popup_1d6372a536f871818de50902d77818ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dfe0d4c682a8d95708d9b82bbc3cc4e1 = $(`<div id="html_dfe0d4c682a8d95708d9b82bbc3cc4e1" style="width: 100.0%; height: 100.0%;">                 <b>Airmob Infra Full</b><br>                 Commune : Courbevoie<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_1d6372a536f871818de50902d77818ca.setContent(html_dfe0d4c682a8d95708d9b82bbc3cc4e1);
+            
+        
+
+        marker_3abb8727e3d01874147c6981d30cb87e.bindPopup(popup_1d6372a536f871818de50902d77818ca)
+        ;
+
+        
+    
+    
+            var marker_811770eff78b324f171d42c6fb7f874e = L.marker(
+                [48.8348611111111, 2.58816666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_0eebfbb4b3a5c01f8dc7fad595a4f3bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_811770eff78b324f171d42c6fb7f874e.setIcon(icon_0eebfbb4b3a5c01f8dc7fad595a4f3bb);
+        
+    
+        var popup_018f0debe1fbd60c66c2fcc9f0d60289 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_271b4e7ce29e9b3a50c2b126cb604847 = $(`<div id="html_271b4e7ce29e9b3a50c2b126cb604847" style="width: 100.0%; height: 100.0%;">                 <b>Celeste</b><br>                 Commune : Champs-sur-Marne<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_018f0debe1fbd60c66c2fcc9f0d60289.setContent(html_271b4e7ce29e9b3a50c2b126cb604847);
+            
+        
+
+        marker_811770eff78b324f171d42c6fb7f874e.bindPopup(popup_018f0debe1fbd60c66c2fcc9f0d60289)
+        ;
+
+        
+    
+    
+            var marker_9322b0825bf187ea5f35699202b2858b = L.marker(
+                [46.13775, 6.11705555555556],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_c8ddca534e748de3fdab0265fcaaa157 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9322b0825bf187ea5f35699202b2858b.setIcon(icon_c8ddca534e748de3fdab0265fcaaa157);
+        
+    
+        var popup_70aad8f5c7559536d8513a6506cc0503 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a9fa5fa385cc72d2a451cba12a5bc800 = $(`<div id="html_a9fa5fa385cc72d2a451cba12a5bc800" style="width: 100.0%; height: 100.0%;">                 <b>Celeste</b><br>                 Commune : Archamps<br>                 Région : Auvergne-Rhône-Alpes<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_70aad8f5c7559536d8513a6506cc0503.setContent(html_a9fa5fa385cc72d2a451cba12a5bc800);
+            
+        
+
+        marker_9322b0825bf187ea5f35699202b2858b.bindPopup(popup_70aad8f5c7559536d8513a6506cc0503)
+        ;
+
+        
+    
+    
+            var marker_b45f0b101bac54071b4a24c31ea4114e = L.marker(
+                [43.9193111111111, 2.18252777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_5c80b7d7337df2fd4a734e8a35265983 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b45f0b101bac54071b4a24c31ea4114e.setIcon(icon_5c80b7d7337df2fd4a734e8a35265983);
+        
+    
+        var popup_d03ce9418d1455b28137e0b835a6c358 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5f0f6c3b14c586fe03df18be9784d5b6 = $(`<div id="html_5f0f6c3b14c586fe03df18be9784d5b6" style="width: 100.0%; height: 100.0%;">                 <b>Celeste</b><br>                 Commune : Albi<br>                 Région : Occitanie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_d03ce9418d1455b28137e0b835a6c358.setContent(html_5f0f6c3b14c586fe03df18be9784d5b6);
+            
+        
+
+        marker_b45f0b101bac54071b4a24c31ea4114e.bindPopup(popup_d03ce9418d1455b28137e0b835a6c358)
+        ;
+
+        
+    
+    
+            var marker_7d54419e4c575c8142a3d8a8b2e51a77 = L.marker(
+                [48.891325, 2.23835277777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_2c1d54a441159777c3687f0a7b13f7a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_7d54419e4c575c8142a3d8a8b2e51a77.setIcon(icon_2c1d54a441159777c3687f0a7b13f7a5);
+        
+    
+        var popup_76fdfb939e38cf60e47bed589be3457e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8374265933bdfe3dd1886be4334f0c7c = $(`<div id="html_8374265933bdfe3dd1886be4334f0c7c" style="width: 100.0%; height: 100.0%;">                 <b>Paris la Défense</b><br>                 Commune : Courbevoie<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_76fdfb939e38cf60e47bed589be3457e.setContent(html_8374265933bdfe3dd1886be4334f0c7c);
+            
+        
+
+        marker_7d54419e4c575c8142a3d8a8b2e51a77.bindPopup(popup_76fdfb939e38cf60e47bed589be3457e)
+        ;
+
+        
+    
+    
+            var marker_a3ae9762160068e0c73e2c426ac314ec = L.marker(
+                [48.8153333333333, 2.30425],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_19153bd32cff57af2ffe7f5aff4b907a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a3ae9762160068e0c73e2c426ac314ec.setIcon(icon_19153bd32cff57af2ffe7f5aff4b907a);
+        
+    
+        var popup_4b67a4623b06ebc53eb108eca4aae05b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7ccbc33131ab55709fb547c859e280e = $(`<div id="html_c7ccbc33131ab55709fb547c859e280e" style="width: 100.0%; height: 100.0%;">                 <b>Axione</b><br>                 Commune : Malakoff<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_4b67a4623b06ebc53eb108eca4aae05b.setContent(html_c7ccbc33131ab55709fb547c859e280e);
+            
+        
+
+        marker_a3ae9762160068e0c73e2c426ac314ec.bindPopup(popup_4b67a4623b06ebc53eb108eca4aae05b)
+        ;
+
+        
+    
+    
+            var marker_f5fa37ffe2162b36fc51ba9de09b44d3 = L.marker(
+                [47.0664722222222, -0.857555555555556],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_47feafd523cc0d5334c056b9ddd33929 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f5fa37ffe2162b36fc51ba9de09b44d3.setIcon(icon_47feafd523cc0d5334c056b9ddd33929);
+        
+    
+        var popup_96ecfa407328fa810e524500afd34bf6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de3f683ab7fc1c2769ef1662eb6f5009 = $(`<div id="html_de3f683ab7fc1c2769ef1662eb6f5009" style="width: 100.0%; height: 100.0%;">                 <b>Thales</b><br>                 Commune : Cholet<br>                 Région : Pays de la Loire<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_96ecfa407328fa810e524500afd34bf6.setContent(html_de3f683ab7fc1c2769ef1662eb6f5009);
+            
+        
+
+        marker_f5fa37ffe2162b36fc51ba9de09b44d3.bindPopup(popup_96ecfa407328fa810e524500afd34bf6)
+        ;
+
+        
+    
+    
+            var marker_45202f2bd2a2a388b5c29b6dd9ab4c64 = L.marker(
+                [48.785, 2.20805555555556],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_4948659df660a6c4b6d64695cdf93208 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_45202f2bd2a2a388b5c29b6dd9ab4c64.setIcon(icon_4948659df660a6c4b6d64695cdf93208);
+        
+    
+        var popup_fe18b5e2cb120fab4eccddbf6d78ea93 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2f1c4de4cba0e9615f1daf91af430fdd = $(`<div id="html_2f1c4de4cba0e9615f1daf91af430fdd" style="width: 100.0%; height: 100.0%;">                 <b>GTS FRANCE SAS</b><br>                 Commune : Vélizy-Villacoublay<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_fe18b5e2cb120fab4eccddbf6d78ea93.setContent(html_2f1c4de4cba0e9615f1daf91af430fdd);
+            
+        
+
+        marker_45202f2bd2a2a388b5c29b6dd9ab4c64.bindPopup(popup_fe18b5e2cb120fab4eccddbf6d78ea93)
+        ;
+
+        
+    
+    
+            var marker_88261b70d133bfe0b112e93e24f46ff7 = L.marker(
+                [50.6108333333333, 3.13466666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_bf081583ce660764a2138807e8cba539 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_88261b70d133bfe0b112e93e24f46ff7.setIcon(icon_bf081583ce660764a2138807e8cba539);
+        
+    
+        var popup_6adf9c6bb5ecce34eec209036dae5335 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6478525e34f0f64e75a121aa2fc9318a = $(`<div id="html_6478525e34f0f64e75a121aa2fc9318a" style="width: 100.0%; height: 100.0%;">                 <b>IMT Nord Europe</b><br>                 Commune : Villeneuve-d'Ascq<br>                 Région : Hauts-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_6adf9c6bb5ecce34eec209036dae5335.setContent(html_6478525e34f0f64e75a121aa2fc9318a);
+            
+        
+
+        marker_88261b70d133bfe0b112e93e24f46ff7.bindPopup(popup_6adf9c6bb5ecce34eec209036dae5335)
+        ;
+
+        
+    
+    
+            var marker_622ffd0401ed51bfd336832d1f904445 = L.marker(
+                [48.7196944444444, 2.26644444444444],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_4c39adbab0ef50cfa925db3e60f67fdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_622ffd0401ed51bfd336832d1f904445.setIcon(icon_4c39adbab0ef50cfa925db3e60f67fdc);
+        
+    
+        var popup_b533f996824c68782718eb22c8f63ddd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_799287d30599d5be25aba8c687320d92 = $(`<div id="html_799287d30599d5be25aba8c687320d92" style="width: 100.0%; height: 100.0%;">                 <b>Nokia Networks France</b><br>                 Commune : Massy<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_b533f996824c68782718eb22c8f63ddd.setContent(html_799287d30599d5be25aba8c687320d92);
+            
+        
+
+        marker_622ffd0401ed51bfd336832d1f904445.bindPopup(popup_b533f996824c68782718eb22c8f63ddd)
+        ;
+
+        
+    
+    
+            var marker_57a43c9a150bd5829074f94df34c61ea = L.marker(
+                [51.03975, 2.28252777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_78bd222f8d48647ad2ae5269f60b7d2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_57a43c9a150bd5829074f94df34c61ea.setIcon(icon_78bd222f8d48647ad2ae5269f60b7d2c);
+        
+    
+        var popup_5b049554a531b9dd3545f96bc393037d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ab93d3c062c671a2718ec467764ac820 = $(`<div id="html_ab93d3c062c671a2718ec467764ac820" style="width: 100.0%; height: 100.0%;">                 <b>ArcelorMittal France</b><br>                 Commune : Dunkerque<br>                 Région : Hauts-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_5b049554a531b9dd3545f96bc393037d.setContent(html_ab93d3c062c671a2718ec467764ac820);
+            
+        
+
+        marker_57a43c9a150bd5829074f94df34c61ea.bindPopup(popup_5b049554a531b9dd3545f96bc393037d)
+        ;
+
+        
+    
+    
+            var marker_a26b4ad475d6340bc317191d6bd5239a = L.marker(
+                [48.6192222222222, 7.74827777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_8a1d4443a44a9ba5ee45ebb97a0a1bd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a26b4ad475d6340bc317191d6bd5239a.setIcon(icon_8a1d4443a44a9ba5ee45ebb97a0a1bd4);
+        
+    
+        var popup_26df25c31e7defc7e68f998efa6e5ca7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_26cb659b626d544e6f93428f3eff5d6a = $(`<div id="html_26cb659b626d544e6f93428f3eff5d6a" style="width: 100.0%; height: 100.0%;">                 <b>SNCF</b><br>                 Commune : Bischheim<br>                 Région : Grand Est<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_26df25c31e7defc7e68f998efa6e5ca7.setContent(html_26cb659b626d544e6f93428f3eff5d6a);
+            
+        
+
+        marker_a26b4ad475d6340bc317191d6bd5239a.bindPopup(popup_26df25c31e7defc7e68f998efa6e5ca7)
+        ;
+
+        
+    
+    
+            var marker_4d352a1a1ad7c95d20ffa0e01669148c = L.marker(
+                [48.6193416666667, 7.74923055555556],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_9b6763f4d2e2add709167bebb345c80c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4d352a1a1ad7c95d20ffa0e01669148c.setIcon(icon_9b6763f4d2e2add709167bebb345c80c);
+        
+    
+        var popup_d81c763d6650877880ff616994b1e17e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9c7329d8cb1fb4cbf070f73142b0a859 = $(`<div id="html_9c7329d8cb1fb4cbf070f73142b0a859" style="width: 100.0%; height: 100.0%;">                 <b>SNCF</b><br>                 Commune : Bischheim<br>                 Région : Grand Est<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_d81c763d6650877880ff616994b1e17e.setContent(html_9c7329d8cb1fb4cbf070f73142b0a859);
+            
+        
+
+        marker_4d352a1a1ad7c95d20ffa0e01669148c.bindPopup(popup_d81c763d6650877880ff616994b1e17e)
+        ;
+
+        
+    
+    
+            var marker_a350302c7a9efeeefe2ca26c42a055fc = L.marker(
+                [48.7983333333333, 1.97],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_1e8b0664964be5aa7dc789fae351fa8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a350302c7a9efeeefe2ca26c42a055fc.setIcon(icon_1e8b0664964be5aa7dc789fae351fa8f);
+        
+    
+        var popup_ba8f96e7b57f8ae4631e0d7c3d12d221 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e99978556bf962163f76eaee21ede3e = $(`<div id="html_1e99978556bf962163f76eaee21ede3e" style="width: 100.0%; height: 100.0%;">                 <b>AIRBUS Defence & Space</b><br>                 Commune : Élancourt<br>                 Région : Île-de-France<br>                 Bande utilisée : 26 GHz                 </div>`)[0];
+                popup_ba8f96e7b57f8ae4631e0d7c3d12d221.setContent(html_1e99978556bf962163f76eaee21ede3e);
+            
+        
+
+        marker_a350302c7a9efeeefe2ca26c42a055fc.bindPopup(popup_ba8f96e7b57f8ae4631e0d7c3d12d221)
+        ;
+
+        
+    
+    
+            var marker_2e13dc6277f498d0eb4fdd0b0b4e8faa = L.marker(
+                [48.1357639, -1.6231722],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_989fe148f11128303f52e885ad36ec5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2e13dc6277f498d0eb4fdd0b0b4e8faa.setIcon(icon_989fe148f11128303f52e885ad36ec5b);
+        
+    
+        var popup_9b5f2d725519e04eec50231f34af07c9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9423f0f9fd45e8a311c365e1cfcf2964 = $(`<div id="html_9423f0f9fd45e8a311c365e1cfcf2964" style="width: 100.0%; height: 100.0%;">                 <b>B-COM</b><br>                 Commune : Lannion<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_9b5f2d725519e04eec50231f34af07c9.setContent(html_9423f0f9fd45e8a311c365e1cfcf2964);
+            
+        
+
+        marker_2e13dc6277f498d0eb4fdd0b0b4e8faa.bindPopup(popup_9b5f2d725519e04eec50231f34af07c9)
+        ;
+
+        
+    
+    
+            var marker_fd8d060e7a6287c0ad114ef6e187b256 = L.marker(
+                [48.7537222222222, -3.44725],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_2dc3e4fa65b37da69b40799701493d00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_fd8d060e7a6287c0ad114ef6e187b256.setIcon(icon_2dc3e4fa65b37da69b40799701493d00);
+        
+    
+        var popup_76673d7b743a41b4be5a8d849f4d5c7a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9fa5154a5785a6d97b9b35860a3a3b34 = $(`<div id="html_9fa5154a5785a6d97b9b35860a3a3b34" style="width: 100.0%; height: 100.0%;">                 <b>Obvios</b><br>                 Commune : Lannion<br>                 Région : Bretagne<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_76673d7b743a41b4be5a8d849f4d5c7a.setContent(html_9fa5154a5785a6d97b9b35860a3a3b34);
+            
+        
+
+        marker_fd8d060e7a6287c0ad114ef6e187b256.bindPopup(popup_76673d7b743a41b4be5a8d849f4d5c7a)
+        ;
+
+        
+    
+    
+            var marker_4dad52d0010b2f7a5f3fac1ba7768a77 = L.marker(
+                [48.1359166666667, -1.62325],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_0e84d878a477f922ba8dd9d890105727 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4dad52d0010b2f7a5f3fac1ba7768a77.setIcon(icon_0e84d878a477f922ba8dd9d890105727);
+        
+    
+        var popup_0ad36f042c3d684aaada8862abff45d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd7be3b97083ec45e44ec925f9ff9c0a = $(`<div id="html_bd7be3b97083ec45e44ec925f9ff9c0a" style="width: 100.0%; height: 100.0%;">                 <b>Obvios</b><br>                 Commune : Cesson-Sévigné<br>                 Région : Bretagne<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_0ad36f042c3d684aaada8862abff45d3.setContent(html_bd7be3b97083ec45e44ec925f9ff9c0a);
+            
+        
+
+        marker_4dad52d0010b2f7a5f3fac1ba7768a77.bindPopup(popup_0ad36f042c3d684aaada8862abff45d3)
+        ;
+
+        
+    
+    
+            var marker_d38716736f48dbbda99481f6ecfb4c9d = L.marker(
+                [45.20388888888889, 5.709722222222222],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_c3397667645d2431b22f2903b6410315 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d38716736f48dbbda99481f6ecfb4c9d.setIcon(icon_c3397667645d2431b22f2903b6410315);
+        
+    
+        var popup_fd0114b9556c2ffb80fcd516ff4b4200 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_baa0fffa15c2fd91a36eb25659bb25a3 = $(`<div id="html_baa0fffa15c2fd91a36eb25659bb25a3" style="width: 100.0%; height: 100.0%;">                 <b>Schneider Electric</b><br>                 Commune : Grenoble<br>                 Région : Auvergne-Rhône-Alpes<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_fd0114b9556c2ffb80fcd516ff4b4200.setContent(html_baa0fffa15c2fd91a36eb25659bb25a3);
+            
+        
+
+        marker_d38716736f48dbbda99481f6ecfb4c9d.bindPopup(popup_fd0114b9556c2ffb80fcd516ff4b4200)
+        ;
+
+        
+    
+    
+            var marker_b96ce118a74f474d96d8adf5c3cb006e = L.marker(
+                [50.386944444444445, 3.0836111111111117],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_28472f2f13ffcb71f7389a4f74095e0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b96ce118a74f474d96d8adf5c3cb006e.setIcon(icon_28472f2f13ffcb71f7389a4f74095e0a);
+        
+    
+        var popup_25d93179ecdd5307c5d5711445d70bc2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa1ee514b2032e78227f92475f6aeffd = $(`<div id="html_fa1ee514b2032e78227f92475f6aeffd" style="width: 100.0%; height: 100.0%;">                 <b>IMT Nord Europe</b><br>                 Commune : Douai<br>                 Région : Hauts-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_25d93179ecdd5307c5d5711445d70bc2.setContent(html_fa1ee514b2032e78227f92475f6aeffd);
+            
+        
+
+        marker_b96ce118a74f474d96d8adf5c3cb006e.bindPopup(popup_25d93179ecdd5307c5d5711445d70bc2)
+        ;
+
+        
+    
+    
+            var marker_e065f58ed6e2068f95f8c24c273a83d2 = L.marker(
+                [48.8929416666667, 2.23668333333333],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_5a9a2363fa9101c8613ff8c5494c8f2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e065f58ed6e2068f95f8c24c273a83d2.setIcon(icon_5a9a2363fa9101c8613ff8c5494c8f2c);
+        
+    
+        var popup_0ea75612e1806368130e19b9bc3ec2d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1bbccac0e4e5d6416d795e5ed941388a = $(`<div id="html_1bbccac0e4e5d6416d795e5ed941388a" style="width: 100.0%; height: 100.0%;">                 <b>Paris la Défense</b><br>                 Commune : Courbevoie<br>                 Région : Île-de-France<br>                 Bande utilisée : 26 GHz                 </div>`)[0];
+                popup_0ea75612e1806368130e19b9bc3ec2d5.setContent(html_1bbccac0e4e5d6416d795e5ed941388a);
+            
+        
+
+        marker_e065f58ed6e2068f95f8c24c273a83d2.bindPopup(popup_0ea75612e1806368130e19b9bc3ec2d5)
+        ;
+
+        
+    
+    
+            var marker_07f7b4d67284013d24d59c6a8d26782e = L.marker(
+                [43.40383333333333, 5.205277777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_a6fec0c520e615bb0fb8324bf4bccab7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_07f7b4d67284013d24d59c6a8d26782e.setIcon(icon_a6fec0c520e615bb0fb8324bf4bccab7);
+        
+    
+        var popup_6aab5ae01b75e32be8f516a9d3e8bd17 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_42d119d766e43565609e9f960538f93e = $(`<div id="html_42d119d766e43565609e9f960538f93e" style="width: 100.0%; height: 100.0%;">                 <b>Team Henry Fabre</b><br>                 Commune : Marignane<br>                 Région : Provence-Alpes-Côte d'Azur<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_6aab5ae01b75e32be8f516a9d3e8bd17.setContent(html_42d119d766e43565609e9f960538f93e);
+            
+        
+
+        marker_07f7b4d67284013d24d59c6a8d26782e.bindPopup(popup_6aab5ae01b75e32be8f516a9d3e8bd17)
+        ;
+
+        
+    
+    
+            var marker_da761e3ab1af5c95eb13e048aab8bdc9 = L.marker(
+                [47.07780555555556, -0.8721944444444445],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_c0b95c6d1510eccc98ed467533b53c0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_da761e3ab1af5c95eb13e048aab8bdc9.setIcon(icon_c0b95c6d1510eccc98ed467533b53c0b);
+        
+    
+        var popup_63b2b6cc46c97fb65aca5262376e0908 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7e413ffe2b0a73c6d91dafc33c6a2364 = $(`<div id="html_7e413ffe2b0a73c6d91dafc33c6a2364" style="width: 100.0%; height: 100.0%;">                 <b>Thales</b><br>                 Commune : Cholet<br>                 Région : Pays de la Loire<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_63b2b6cc46c97fb65aca5262376e0908.setContent(html_7e413ffe2b0a73c6d91dafc33c6a2364);
+            
+        
+
+        marker_da761e3ab1af5c95eb13e048aab8bdc9.bindPopup(popup_63b2b6cc46c97fb65aca5262376e0908)
+        ;
+
+        
+    
+    
+            var marker_5619804cadd6bea6e9d86f743c94e111 = L.marker(
+                [47.07669444444445, -0.8706111111111111],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_4f9c307fd36dcfa8d284ac887de2e933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5619804cadd6bea6e9d86f743c94e111.setIcon(icon_4f9c307fd36dcfa8d284ac887de2e933);
+        
+    
+        var popup_fd26c1471f8ecc8b4a60e396bb3f96bc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f72d959d89b6afdf627f633dd359004 = $(`<div id="html_9f72d959d89b6afdf627f633dd359004" style="width: 100.0%; height: 100.0%;">                 <b>Thales</b><br>                 Commune : Cholet<br>                 Région : Pays de la Loire<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_fd26c1471f8ecc8b4a60e396bb3f96bc.setContent(html_9f72d959d89b6afdf627f633dd359004);
+            
+        
+
+        marker_5619804cadd6bea6e9d86f743c94e111.bindPopup(popup_fd26c1471f8ecc8b4a60e396bb3f96bc)
+        ;
+
+        
+    
+    
+            var marker_184df1b2c5d921b1d24953e38da1a744 = L.marker(
+                [49.47944444444445, 0.1676388888888889],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_cb00a3629538013a16e8027576418f35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_184df1b2c5d921b1d24953e38da1a744.setIcon(icon_cb00a3629538013a16e8027576418f35);
+        
+    
+        var popup_ce5efddfd373aace6818dcb486dbd3dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2a9bfeec633e2c43543352d89f91022e = $(`<div id="html_2a9bfeec633e2c43543352d89f91022e" style="width: 100.0%; height: 100.0%;">                 <b>Luceor</b><br>                 Commune : Le Havre<br>                 Région : Normandie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_ce5efddfd373aace6818dcb486dbd3dd.setContent(html_2a9bfeec633e2c43543352d89f91022e);
+            
+        
+
+        marker_184df1b2c5d921b1d24953e38da1a744.bindPopup(popup_ce5efddfd373aace6818dcb486dbd3dd)
+        ;
+
+        
+    
+    
+            var marker_d1cdbaee459d13ff2abfc9e419a5aef6 = L.marker(
+                [5.171291, -52.680494],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_be7971f8c077aa085522648cfbc75bf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d1cdbaee459d13ff2abfc9e419a5aef6.setIcon(icon_be7971f8c077aa085522648cfbc75bf4);
+        
+    
+        var popup_ecd3cb49317f7148e13497f000c9ec7e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c274fd0eeaddd1da19273904a6ba894 = $(`<div id="html_7c274fd0eeaddd1da19273904a6ba894" style="width: 100.0%; height: 100.0%;">                 <b>CNES</b><br>                 Commune : Kourou<br>                 Région : Guyane<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_ecd3cb49317f7148e13497f000c9ec7e.setContent(html_7c274fd0eeaddd1da19273904a6ba894);
+            
+        
+
+        marker_d1cdbaee459d13ff2abfc9e419a5aef6.bindPopup(popup_ecd3cb49317f7148e13497f000c9ec7e)
+        ;
+
+        
+    
+    
+            var marker_5f0836dd57013645c3c854fecd460795 = L.marker(
+                [48.105, -1.636388888888889],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_b7cd55f29178ce3244af412c2e2c09b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5f0836dd57013645c3c854fecd460795.setIcon(icon_b7cd55f29178ce3244af412c2e2c09b7);
+        
+    
+        var popup_74c64f88cdf6f27be7643eb0868fcbe4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aba346c590a1b6e5ddb852d79678f99f = $(`<div id="html_aba346c590a1b6e5ddb852d79678f99f" style="width: 100.0%; height: 100.0%;">                 <b>SNCF</b><br>                 Commune : Rennes<br>                 Région : Bretagne<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_74c64f88cdf6f27be7643eb0868fcbe4.setContent(html_aba346c590a1b6e5ddb852d79678f99f);
+            
+        
+
+        marker_5f0836dd57013645c3c854fecd460795.bindPopup(popup_74c64f88cdf6f27be7643eb0868fcbe4)
+        ;
+
+        
+    
+    
+            var marker_b05ce07a85a68c35ee140d4cbeb096a4 = L.marker(
+                [43.61416666666667, 7.07111111111111],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_27fffc0b1a47d75829abd1ba683910c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b05ce07a85a68c35ee140d4cbeb096a4.setIcon(icon_27fffc0b1a47d75829abd1ba683910c3);
+        
+    
+        var popup_d234c725c1e6be929636238e1277d71c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_22c0ecc41873dd2a239bfbbff1a50380 = $(`<div id="html_22c0ecc41873dd2a239bfbbff1a50380" style="width: 100.0%; height: 100.0%;">                 <b>Eurecom</b><br>                 Commune : Biot<br>                 Région : Provence-Alpes-Côte d'Azur<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_d234c725c1e6be929636238e1277d71c.setContent(html_22c0ecc41873dd2a239bfbbff1a50380);
+            
+        
+
+        marker_b05ce07a85a68c35ee140d4cbeb096a4.bindPopup(popup_d234c725c1e6be929636238e1277d71c)
+        ;
+
+        
+    
+    
+            var marker_911cdcffcd4ff70e781d700dbe8125e8 = L.marker(
+                [43.61416666666667, 7.07111111111111],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_c4d6e66639624cb0e0529b4b85f587fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_911cdcffcd4ff70e781d700dbe8125e8.setIcon(icon_c4d6e66639624cb0e0529b4b85f587fb);
+        
+    
+        var popup_e3701414d9f0fbc049a52f907d7185ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_34831de89446e3d618b4f4658b001c3e = $(`<div id="html_34831de89446e3d618b4f4658b001c3e" style="width: 100.0%; height: 100.0%;">                 <b>Eurecom</b><br>                 Commune : Biot<br>                 Région : Provence-Alpes-Côte d'Azur<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_e3701414d9f0fbc049a52f907d7185ca.setContent(html_34831de89446e3d618b4f4658b001c3e);
+            
+        
+
+        marker_911cdcffcd4ff70e781d700dbe8125e8.bindPopup(popup_e3701414d9f0fbc049a52f907d7185ca)
+        ;
+
+        
+    
+    
+            var marker_6b2257735703f27aec005a83cbc17c22 = L.marker(
+                [43.61416666666667, 7.07083333333333],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_e17f9c7172b52d200468fd217c4f1435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6b2257735703f27aec005a83cbc17c22.setIcon(icon_e17f9c7172b52d200468fd217c4f1435);
+        
+    
+        var popup_d710fe7327381b898d05aa65fab1cc8a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_07c42796324df3e4192d1e03dbf3b548 = $(`<div id="html_07c42796324df3e4192d1e03dbf3b548" style="width: 100.0%; height: 100.0%;">                 <b>Firecell</b><br>                 Commune : Biot<br>                 Région : Provence-Alpes-Côte d'Azur<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_d710fe7327381b898d05aa65fab1cc8a.setContent(html_07c42796324df3e4192d1e03dbf3b548);
+            
+        
+
+        marker_6b2257735703f27aec005a83cbc17c22.bindPopup(popup_d710fe7327381b898d05aa65fab1cc8a)
+        ;
+
+        
+    
+    
+            var marker_0edf46535d03a27450ce6f948827a954 = L.marker(
+                [43.43194444444444, 4.89722222222222],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_339956576328f85f8b78e09f8524168b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0edf46535d03a27450ce6f948827a954.setIcon(icon_339956576328f85f8b78e09f8524168b);
+        
+    
+        var popup_f0595a239b31c213e3f9d1b78a6603a4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_183f364558cf99f4ed00e9c8e22d9082 = $(`<div id="html_183f364558cf99f4ed00e9c8e22d9082" style="width: 100.0%; height: 100.0%;">                 <b>ArcelorMittal France</b><br>                 Commune : Fos-sur-Mer<br>                 Région : Provence-Alpes-Côte d'Azur<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_f0595a239b31c213e3f9d1b78a6603a4.setContent(html_183f364558cf99f4ed00e9c8e22d9082);
+            
+        
+
+        marker_0edf46535d03a27450ce6f948827a954.bindPopup(popup_f0595a239b31c213e3f9d1b78a6603a4)
+        ;
+
+        
+    
+    
+            var marker_999b62e1febc1612c49069a99bedf33e = L.marker(
+                [48.05916666666666, -0.7127777777777777],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_078576b37e437cb3e3b274335ccc3937 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_999b62e1febc1612c49069a99bedf33e.setIcon(icon_078576b37e437cb3e3b274335ccc3937);
+        
+    
+        var popup_a47b56b005367f302bab173c47eda34a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8a36a468dd43e5d5eb643aaac27d36b6 = $(`<div id="html_8a36a468dd43e5d5eb643aaac27d36b6" style="width: 100.0%; height: 100.0%;">                 <b>Excelcar</b><br>                 Commune : Chartres-de-Bretagne<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_a47b56b005367f302bab173c47eda34a.setContent(html_8a36a468dd43e5d5eb643aaac27d36b6);
+            
+        
+
+        marker_999b62e1febc1612c49069a99bedf33e.bindPopup(popup_a47b56b005367f302bab173c47eda34a)
+        ;
+
+        
+    
+    
+            var marker_342211567951ff21088193a280fc4ffa = L.marker(
+                [48.12055555555556, -1.6247222222222222],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_378466fd234622505a3035c80c62c028 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_342211567951ff21088193a280fc4ffa.setIcon(icon_378466fd234622505a3035c80c62c028);
+        
+    
+        var popup_4a4a94ec6e7fe2158f8f44218c37e482 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b6dc6b5940bdeb892340d6fbf7de59ce = $(`<div id="html_b6dc6b5940bdeb892340d6fbf7de59ce" style="width: 100.0%; height: 100.0%;">                 <b>Obvios</b><br>                 Commune : Cesson-Sévigné<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_4a4a94ec6e7fe2158f8f44218c37e482.setContent(html_b6dc6b5940bdeb892340d6fbf7de59ce);
+            
+        
+
+        marker_342211567951ff21088193a280fc4ffa.bindPopup(popup_4a4a94ec6e7fe2158f8f44218c37e482)
+        ;
+
+        
+    
+    
+            var marker_ef3d537203785489b65b4e949f07991b = L.marker(
+                [49.98444444444444, 2.6777777777777776],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_a29abde7e16ff71ada7c4aae6d2cf5a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ef3d537203785489b65b4e949f07991b.setIcon(icon_a29abde7e16ff71ada7c4aae6d2cf5a8);
+        
+    
+        var popup_a45a4b62a50e53fb244fe02aa55c069f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a8877ca110a94db72284ea2b758ec0a3 = $(`<div id="html_a8877ca110a94db72284ea2b758ec0a3" style="width: 100.0%; height: 100.0%;">                 <b>Airbus Atlantic</b><br>                 Commune : Méaulte<br>                 Région : Hauts-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_a45a4b62a50e53fb244fe02aa55c069f.setContent(html_a8877ca110a94db72284ea2b758ec0a3);
+            
+        
+
+        marker_ef3d537203785489b65b4e949f07991b.bindPopup(popup_a45a4b62a50e53fb244fe02aa55c069f)
+        ;
+
+        
+    
+    
+            var marker_3007d31378256513e205f0b04b8fdf4c = L.marker(
+                [42.62269444444445, 2.443277777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_68d42e02f4e83e91a4ea3b0b4384fcee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3007d31378256513e205f0b04b8fdf4c.setIcon(icon_68d42e02f4e83e91a4ea3b0b4384fcee);
+        
+    
+        var popup_e5311bb47c0932f9ffe5d7ec9ce7176a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_464bef335fcdb674d25ecd6630616e9a = $(`<div id="html_464bef335fcdb674d25ecd6630616e9a" style="width: 100.0%; height: 100.0%;">                 <b>Selecom critical comms</b><br>                 Commune : Prades<br>                 Région : Occitanie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_e5311bb47c0932f9ffe5d7ec9ce7176a.setContent(html_464bef335fcdb674d25ecd6630616e9a);
+            
+        
+
+        marker_3007d31378256513e205f0b04b8fdf4c.bindPopup(popup_e5311bb47c0932f9ffe5d7ec9ce7176a)
+        ;
+
+        
+    
+    
+            var marker_1a7408cef0b6623cbfb67eeea31bd590 = L.marker(
+                [43.41008333333333, 4.845416666666666],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_147ddd0957b6b7378a2445c8a3b45987 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1a7408cef0b6623cbfb67eeea31bd590.setIcon(icon_147ddd0957b6b7378a2445c8a3b45987);
+        
+    
+        var popup_e9b721cb087b7e41ef84c4f35a0e9d3c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3557e73c6df85fa1f27c43cb742a5a2e = $(`<div id="html_3557e73c6df85fa1f27c43cb742a5a2e" style="width: 100.0%; height: 100.0%;">                 <b>Luceor</b><br>                 Commune : Fos-sur-Mer<br>                 Région : Provence-Alpes-Côte d'Azur<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_e9b721cb087b7e41ef84c4f35a0e9d3c.setContent(html_3557e73c6df85fa1f27c43cb742a5a2e);
+            
+        
+
+        marker_1a7408cef0b6623cbfb67eeea31bd590.bindPopup(popup_e9b721cb087b7e41ef84c4f35a0e9d3c)
+        ;
+
+        
+    
+    
+            var marker_52746c883de36792e77af9ff874feb49 = L.marker(
+                [48.07033333333334, -1.70125],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_55702a4ff0be7d89fdbf74bfa62ad253 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_52746c883de36792e77af9ff874feb49.setIcon(icon_55702a4ff0be7d89fdbf74bfa62ad253);
+        
+    
+        var popup_c41e7c4d27f8e9ed91e496ffb9f88026 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4620a4bf7b3a511b4a63a1670dc4b5a2 = $(`<div id="html_4620a4bf7b3a511b4a63a1670dc4b5a2" style="width: 100.0%; height: 100.0%;">                 <b>SNCF Réseau</b><br>                 Commune : Rennes<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_c41e7c4d27f8e9ed91e496ffb9f88026.setContent(html_4620a4bf7b3a511b4a63a1670dc4b5a2);
+            
+        
+
+        marker_52746c883de36792e77af9ff874feb49.bindPopup(popup_c41e7c4d27f8e9ed91e496ffb9f88026)
+        ;
+
+        
+    
+    
+            var marker_5d7f138d72ef811ba0a87bd4c3aaeba6 = L.marker(
+                [48.824444444444445, 2.265],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_bd776d77b2ca439baf10a5400c4efc51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5d7f138d72ef811ba0a87bd4c3aaeba6.setIcon(icon_bd776d77b2ca439baf10a5400c4efc51);
+        
+    
+        var popup_26208bae824adbccd555b252af73a3e8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8d44f844f4fc9a2b930b672a76aab3dc = $(`<div id="html_8d44f844f4fc9a2b930b672a76aab3dc" style="width: 100.0%; height: 100.0%;">                 <b>Cogisys</b><br>                 Commune : Issy-les-Moulineaux<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_26208bae824adbccd555b252af73a3e8.setContent(html_8d44f844f4fc9a2b930b672a76aab3dc);
+            
+        
+
+        marker_5d7f138d72ef811ba0a87bd4c3aaeba6.bindPopup(popup_26208bae824adbccd555b252af73a3e8)
+        ;
+
+        
+    
+    
+            var marker_d9db6693c01647faddcc25392aa8f61b = L.marker(
+                [47.38447222222222, 0.7306944444444444],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_8b40394fa29e5877fc85decdf9ed4ada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d9db6693c01647faddcc25392aa8f61b.setIcon(icon_8b40394fa29e5877fc85decdf9ed4ada);
+        
+    
+        var popup_b2a6380c99001c2058223773d9365a9a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2244e292848f9e82bfaa6b6097d0ba09 = $(`<div id="html_2244e292848f9e82bfaa6b6097d0ba09" style="width: 100.0%; height: 100.0%;">                 <b>IMT Nord Europe</b><br>                 Commune : Saint-Pierre-des-Corps<br>                 Région : Centre-Val de Loire<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_b2a6380c99001c2058223773d9365a9a.setContent(html_2244e292848f9e82bfaa6b6097d0ba09);
+            
+        
+
+        marker_d9db6693c01647faddcc25392aa8f61b.bindPopup(popup_b2a6380c99001c2058223773d9365a9a)
+        ;
+
+        
+    
+    
+            var marker_63e25c338de93fb1148a11e0a0416ccb = L.marker(
+                [48.89111111111111, 2.2466666666666666],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_a28d8fa888ffaa4bdf49e41c25ad8f8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_63e25c338de93fb1148a11e0a0416ccb.setIcon(icon_a28d8fa888ffaa4bdf49e41c25ad8f8c);
+        
+    
+        var popup_c3fcefde42de4236a0f91fe7a81f42ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32748c473043781e30c17131b8885a1e = $(`<div id="html_32748c473043781e30c17131b8885a1e" style="width: 100.0%; height: 100.0%;">                 <b>Transatel</b><br>                 Commune : Courbevoie<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_c3fcefde42de4236a0f91fe7a81f42ec.setContent(html_32748c473043781e30c17131b8885a1e);
+            
+        
+
+        marker_63e25c338de93fb1148a11e0a0416ccb.bindPopup(popup_c3fcefde42de4236a0f91fe7a81f42ec)
+        ;
+
+        
+    
+    
+            var marker_e311f74eca3024b6e19d90d77ab19b0e = L.marker(
+                [50.36133333333333, 3.0289444444444444],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_83ec92937857ae58b99028b6c0210559 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e311f74eca3024b6e19d90d77ab19b0e.setIcon(icon_83ec92937857ae58b99028b6c0210559);
+        
+    
+        var popup_0d0233ad9e43770fbf35a52ee52cad23 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dfb4497fca17c4f0f9e0ad7fb87aafcf = $(`<div id="html_dfb4497fca17c4f0f9e0ad7fb87aafcf" style="width: 100.0%; height: 100.0%;">                 <b>Renault</b><br>                 Commune : Lambres-lez-Douai<br>                 Région : Hauts-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_0d0233ad9e43770fbf35a52ee52cad23.setContent(html_dfb4497fca17c4f0f9e0ad7fb87aafcf);
+            
+        
+
+        marker_e311f74eca3024b6e19d90d77ab19b0e.bindPopup(popup_0d0233ad9e43770fbf35a52ee52cad23)
+        ;
+
+        
+    
+    
+            var marker_3e74565f87bb82c31fd08d9daf5ac5b3 = L.marker(
+                [49.009972222222224, 2.554305555555555],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_b83e8813776947638e15620ea595db6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3e74565f87bb82c31fd08d9daf5ac5b3.setIcon(icon_b83e8813776947638e15620ea595db6d);
+        
+    
+        var popup_b9e1ba6e908b89370935e3ea31d1c16c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ce7e8a8fcca5b23329dca0536032510f = $(`<div id="html_ce7e8a8fcca5b23329dca0536032510f" style="width: 100.0%; height: 100.0%;">                 <b>Hub One</b><br>                 Commune : Tremblay-en-France<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_b9e1ba6e908b89370935e3ea31d1c16c.setContent(html_ce7e8a8fcca5b23329dca0536032510f);
+            
+        
+
+        marker_3e74565f87bb82c31fd08d9daf5ac5b3.bindPopup(popup_b9e1ba6e908b89370935e3ea31d1c16c)
+        ;
+
+        
+    
+    
+            var marker_d119bc91cf49e60cc5331518350e2d8b = L.marker(
+                [49.25983333333333, 1.187138888888889],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_81e74aecac0303ff6620d1b308cd84a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d119bc91cf49e60cc5331518350e2d8b.setIcon(icon_81e74aecac0303ff6620d1b308cd84a6);
+        
+    
+        var popup_23baa8e69de122279a523c3b998e9a39 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8270ff45de3d9b65294f401d9a1836d2 = $(`<div id="html_8270ff45de3d9b65294f401d9a1836d2" style="width: 100.0%; height: 100.0%;">                 <b>Airmob Infra Full</b><br>                 Commune : Val-de-Reuil<br>                 Région : Normandie<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_23baa8e69de122279a523c3b998e9a39.setContent(html_8270ff45de3d9b65294f401d9a1836d2);
+            
+        
+
+        marker_d119bc91cf49e60cc5331518350e2d8b.bindPopup(popup_23baa8e69de122279a523c3b998e9a39)
+        ;
+
+        
+    
+    
+            var marker_c86a93ca48813cbb4122ad5a06f489c2 = L.marker(
+                [45.85447222222222, 4.699638888888889],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_89f52f8cabf6924cd3fa9aefa43073dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c86a93ca48813cbb4122ad5a06f489c2.setIcon(icon_89f52f8cabf6924cd3fa9aefa43073dd);
+        
+    
+        var popup_2701dadd4c1529cfa076dde2753e1ffd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_27f8f2057142d68ef1a996121f617d1d = $(`<div id="html_27f8f2057142d68ef1a996121f617d1d" style="width: 100.0%; height: 100.0%;">                 <b>MGA Technologies</b><br>                 Commune : Civrieux-d'Azergues<br>                 Région : Auvergne-Rhône-Alpes<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_2701dadd4c1529cfa076dde2753e1ffd.setContent(html_27f8f2057142d68ef1a996121f617d1d);
+            
+        
+
+        marker_c86a93ca48813cbb4122ad5a06f489c2.bindPopup(popup_2701dadd4c1529cfa076dde2753e1ffd)
+        ;
+
+        
+    
+    
+            var marker_b9f78ea612e678e31c3f44034ff0d25f = L.marker(
+                [48.8973611111111, 2.17008333333333],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_a05770a8fe62429de338d9fe48f566b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b9f78ea612e678e31c3f44034ff0d25f.setIcon(icon_a05770a8fe62429de338d9fe48f566b2);
+        
+    
+        var popup_b65e143a711da48daad1e492577da15f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_60656d5ead6a8f74b16904e1567f0f7f = $(`<div id="html_60656d5ead6a8f74b16904e1567f0f7f" style="width: 100.0%; height: 100.0%;">                 <b>EDF</b><br>                 Commune : Chatou<br>                 Région : Île-de-France<br>                 Bande utilisée : 26 GHz                 </div>`)[0];
+                popup_b65e143a711da48daad1e492577da15f.setContent(html_60656d5ead6a8f74b16904e1567f0f7f);
+            
+        
+
+        marker_b9f78ea612e678e31c3f44034ff0d25f.bindPopup(popup_b65e143a711da48daad1e492577da15f)
+        ;
+
+        
+    
+    
+            var marker_3bb2c208dfff1346d8089b9a215399db = L.marker(
+                [43.36127777777778, 5.337638888888889],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_44543de5b53ef8e423ad9cac693f6035 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3bb2c208dfff1346d8089b9a215399db.setIcon(icon_44543de5b53ef8e423ad9cac693f6035);
+        
+    
+        var popup_86790e2f0e0f18bb78f8236270ad4165 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c4e1e5cb29bc6db6dc11a2cde8fc4982 = $(`<div id="html_c4e1e5cb29bc6db6dc11a2cde8fc4982" style="width: 100.0%; height: 100.0%;">                 <b>Free Pro</b><br>                 Commune : Marseille<br>                 Région : Provence-Alpes-Côte d'Azur<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_86790e2f0e0f18bb78f8236270ad4165.setContent(html_c4e1e5cb29bc6db6dc11a2cde8fc4982);
+            
+        
+
+        marker_3bb2c208dfff1346d8089b9a215399db.bindPopup(popup_86790e2f0e0f18bb78f8236270ad4165)
+        ;
+
+        
+    
+    
+            var marker_40070e60829f5e5309dc509332b37710 = L.marker(
+                [48.7997222222222, 2.29416666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_09cc594f9b5114eb228fcf1a1472f8b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_40070e60829f5e5309dc509332b37710.setIcon(icon_09cc594f9b5114eb228fcf1a1472f8b6);
+        
+    
+        var popup_f07e4f99505eca9d1811cdc75456a39b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_396f5554fd8d19f66169dda71f6faae7 = $(`<div id="html_396f5554fd8d19f66169dda71f6faae7" style="width: 100.0%; height: 100.0%;">                 <b>Orange</b><br>                 Commune : Châtillon<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_f07e4f99505eca9d1811cdc75456a39b.setContent(html_396f5554fd8d19f66169dda71f6faae7);
+            
+        
+
+        marker_40070e60829f5e5309dc509332b37710.bindPopup(popup_f07e4f99505eca9d1811cdc75456a39b)
+        ;
+
+        
+    
+    
+            var marker_6dbd2c0df4703c5d184fb6ed93fb6c62 = L.marker(
+                [48.91361111111111, 2.3175],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_ec41fbf6901e31d0b00633f6af9f9aea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6dbd2c0df4703c5d184fb6ed93fb6c62.setIcon(icon_ec41fbf6901e31d0b00633f6af9f9aea);
+        
+    
+        var popup_ccd4b0219f631747f3a57faf4da01101 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2e72d6bd98bfcaf6c6e7b8f39c43ddfe = $(`<div id="html_2e72d6bd98bfcaf6c6e7b8f39c43ddfe" style="width: 100.0%; height: 100.0%;">                 <b>SNCF Réseau</b><br>                 Commune : Saint-Ouen-sur-Seine<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_ccd4b0219f631747f3a57faf4da01101.setContent(html_2e72d6bd98bfcaf6c6e7b8f39c43ddfe);
+            
+        
+
+        marker_6dbd2c0df4703c5d184fb6ed93fb6c62.bindPopup(popup_ccd4b0219f631747f3a57faf4da01101)
+        ;
+
+        
+    
+    
+            var marker_5c31637d539647ab8d59917e7fb194d0 = L.marker(
+                [48.85827777777778, 2.2945],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_a70a77875b520a3f539aa65e1df8af8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5c31637d539647ab8d59917e7fb194d0.setIcon(icon_a70a77875b520a3f539aa65e1df8af8d);
+        
+    
+        var popup_0445544007764b7de365bb9aafff127e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c0e3cb55ef6aa9f24b8a02eb47e307e5 = $(`<div id="html_c0e3cb55ef6aa9f24b8a02eb47e307e5" style="width: 100.0%; height: 100.0%;">                 <b>TDF</b><br>                 Commune : Paris<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_0445544007764b7de365bb9aafff127e.setContent(html_c0e3cb55ef6aa9f24b8a02eb47e307e5);
+            
+        
+
+        marker_5c31637d539647ab8d59917e7fb194d0.bindPopup(popup_0445544007764b7de365bb9aafff127e)
+        ;
+
+        
+    
+    
+            var marker_344b91b7514d1555bf3707a759f365c6 = L.marker(
+                [48.83888888888889, 2.3786111111111112],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_88799a7317831dd6001aee0974abf281 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_344b91b7514d1555bf3707a759f365c6.setIcon(icon_88799a7317831dd6001aee0974abf281);
+        
+    
+        var popup_45232f1a8c24b78c0167ad103a0d43a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcfecf25c9809132190ad02cc263c006 = $(`<div id="html_dcfecf25c9809132190ad02cc263c006" style="width: 100.0%; height: 100.0%;">                 <b>Orange Events</b><br>                 Commune : Paris<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_45232f1a8c24b78c0167ad103a0d43a1.setContent(html_dcfecf25c9809132190ad02cc263c006);
+            
+        
+
+        marker_344b91b7514d1555bf3707a759f365c6.bindPopup(popup_45232f1a8c24b78c0167ad103a0d43a1)
+        ;
+
+        
+    
+    
+            var marker_02c15d9281ba0de348464c601b0247a6 = L.marker(
+                [48.925, 2.359166666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_0b7506d1df23c5354c89e79db5b771ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_02c15d9281ba0de348464c601b0247a6.setIcon(icon_0b7506d1df23c5354c89e79db5b771ab);
+        
+    
+        var popup_948384b23685770528619cb9212701ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4c01136e19cab32270cf05aa9af42095 = $(`<div id="html_4c01136e19cab32270cf05aa9af42095" style="width: 100.0%; height: 100.0%;">                 <b>Orange Events</b><br>                 Commune : Saint-Denis<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_948384b23685770528619cb9212701ab.setContent(html_4c01136e19cab32270cf05aa9af42095);
+            
+        
+
+        marker_02c15d9281ba0de348464c601b0247a6.bindPopup(popup_948384b23685770528619cb9212701ab)
+        ;
+
+        
+    
+    
+            var marker_a3ad280fedb8037092893967c973c6fb = L.marker(
+                [48.895833333333336, 2.230277777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_05fe91c79e44f77077bb0146fd46d7df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a3ad280fedb8037092893967c973c6fb.setIcon(icon_05fe91c79e44f77077bb0146fd46d7df);
+        
+    
+        var popup_c19c1fbced696960a592cec6906475be = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3c4a4ff58dcd75d02321a76b466d0008 = $(`<div id="html_3c4a4ff58dcd75d02321a76b466d0008" style="width: 100.0%; height: 100.0%;">                 <b>Orange Events</b><br>                 Commune : Courbevoie<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_c19c1fbced696960a592cec6906475be.setContent(html_3c4a4ff58dcd75d02321a76b466d0008);
+            
+        
+
+        marker_a3ad280fedb8037092893967c973c6fb.bindPopup(popup_c19c1fbced696960a592cec6906475be)
+        ;
+
+        
+    
+    
+            var marker_2e85885832cb89db4dbfcb13981b1f6e = L.marker(
+                [48.71769444444445, 2.217027777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_c1fd7120cc0be50e6dc64043b7ddaf3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2e85885832cb89db4dbfcb13981b1f6e.setIcon(icon_c1fd7120cc0be50e6dc64043b7ddaf3f);
+        
+    
+        var popup_67cb1bc542b0cc797d4b8ccc18f36c4c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a9035e6c457295940f0e4da16275a497 = $(`<div id="html_a9035e6c457295940f0e4da16275a497" style="width: 100.0%; height: 100.0%;">                 <b>Société des Grands Projets</b><br>                 Commune : Palaiseau<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_67cb1bc542b0cc797d4b8ccc18f36c4c.setContent(html_a9035e6c457295940f0e4da16275a497);
+            
+        
+
+        marker_2e85885832cb89db4dbfcb13981b1f6e.bindPopup(popup_67cb1bc542b0cc797d4b8ccc18f36c4c)
+        ;
+
+        
+    
+    
+            var marker_a864ddeabb4f91a8138e366e0ebfdba2 = L.marker(
+                [48.83416666666667, 2.258611111111111],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_13be71712880d39b47de80b30ed7b948 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a864ddeabb4f91a8138e366e0ebfdba2.setIcon(icon_13be71712880d39b47de80b30ed7b948);
+        
+    
+        var popup_873f23c79883b408a594a7fa358fcaf6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bddec90c4177197b92b8c215b4c844d8 = $(`<div id="html_bddec90c4177197b92b8c215b4c844d8" style="width: 100.0%; height: 100.0%;">                 <b>Bouygues Telecom</b><br>                 Commune : Boulogne-Billancourt<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_873f23c79883b408a594a7fa358fcaf6.setContent(html_bddec90c4177197b92b8c215b4c844d8);
+            
+        
+
+        marker_a864ddeabb4f91a8138e366e0ebfdba2.bindPopup(popup_873f23c79883b408a594a7fa358fcaf6)
+        ;
+
+        
+    
+    
+            var marker_2dde7790c366a008c32165b28e7448d5 = L.marker(
+                [48.7875, 2.2197222222222224],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_80c5f49c7c4a0603488d8772043ade78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2dde7790c366a008c32165b28e7448d5.setIcon(icon_80c5f49c7c4a0603488d8772043ade78);
+        
+    
+        var popup_2a6cffafdf6794ce8ba44d7bc3cb9885 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e7abcf9435fd642a28fc845e964ccff1 = $(`<div id="html_e7abcf9435fd642a28fc845e964ccff1" style="width: 100.0%; height: 100.0%;">                 <b>Bouygues Telecom</b><br>                 Commune : Meudon<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_2a6cffafdf6794ce8ba44d7bc3cb9885.setContent(html_e7abcf9435fd642a28fc845e964ccff1);
+            
+        
+
+        marker_2dde7790c366a008c32165b28e7448d5.bindPopup(popup_2a6cffafdf6794ce8ba44d7bc3cb9885)
+        ;
+
+        
+    
+    
+            var marker_35529743ccbf22d6dd0014cb54392867 = L.marker(
+                [48.88502777777778, 2.4219166666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_d58d5a43438e8de115368e1d89d27e30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_35529743ccbf22d6dd0014cb54392867.setIcon(icon_d58d5a43438e8de115368e1d89d27e30);
+        
+    
+        var popup_f2552bdf9893bce4413e1b6889701723 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_81e2110e070927399ca2d217a79b85e6 = $(`<div id="html_81e2110e070927399ca2d217a79b85e6" style="width: 100.0%; height: 100.0%;">                 <b>TDF</b><br>                 Commune : Les Lilas<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_f2552bdf9893bce4413e1b6889701723.setContent(html_81e2110e070927399ca2d217a79b85e6);
+            
+        
+
+        marker_35529743ccbf22d6dd0014cb54392867.bindPopup(popup_f2552bdf9893bce4413e1b6889701723)
+        ;
+
+        
+    
+    
+            var marker_4d9f3481f1cd134257b179deefc04232 = L.marker(
+                [48.7625, 2.0825],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_25726ca9faed678cf6d635342ab301ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4d9f3481f1cd134257b179deefc04232.setIcon(icon_25726ca9faed678cf6d635342ab301ae);
+        
+    
+        var popup_5bab02ae9ec485b4edffd8895314c10e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_65488618ca2c757b4bcf3da8dd97a313 = $(`<div id="html_65488618ca2c757b4bcf3da8dd97a313" style="width: 100.0%; height: 100.0%;">                 <b>Airnity</b><br>                 Commune : Guyancourt<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_5bab02ae9ec485b4edffd8895314c10e.setContent(html_65488618ca2c757b4bcf3da8dd97a313);
+            
+        
+
+        marker_4d9f3481f1cd134257b179deefc04232.bindPopup(popup_5bab02ae9ec485b4edffd8895314c10e)
+        ;
+
+        
+    
+    
+            var marker_6da35236beae1aaa6f934004b677954f = L.marker(
+                [48.934, 2.252638888888889],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_b9acb4f01f19c043eba58114058020f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6da35236beae1aaa6f934004b677954f.setIcon(icon_b9acb4f01f19c043eba58114058020f3);
+        
+    
+        var popup_1d2f6a645ca92dcdd190255fe88fecaf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5597df2e060b1e19046ebc44c3ad4ad7 = $(`<div id="html_5597df2e060b1e19046ebc44c3ad4ad7" style="width: 100.0%; height: 100.0%;">                 <b>ALE International</b><br>                 Commune : Colombes<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_1d2f6a645ca92dcdd190255fe88fecaf.setContent(html_5597df2e060b1e19046ebc44c3ad4ad7);
+            
+        
+
+        marker_6da35236beae1aaa6f934004b677954f.bindPopup(popup_1d2f6a645ca92dcdd190255fe88fecaf)
+        ;
+
+        
+    
+    
+            var marker_c7232f0168243865b4c32f9f90f70526 = L.marker(
+                [49.46336111111111, 0.1421666666666666],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_76b90c78cd2111d8f7dd68c1c6d78401 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c7232f0168243865b4c32f9f90f70526.setIcon(icon_76b90c78cd2111d8f7dd68c1c6d78401);
+        
+    
+        var popup_35fe4f8028ae9d27f22a39e3f62077fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ab8b4d2a3d0308ca5f267848ad2132da = $(`<div id="html_ab8b4d2a3d0308ca5f267848ad2132da" style="width: 100.0%; height: 100.0%;">                 <b>Haropa</b><br>                 Commune : Le Havre<br>                 Région : Normandie<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_35fe4f8028ae9d27f22a39e3f62077fb.setContent(html_ab8b4d2a3d0308ca5f267848ad2132da);
+            
+        
+
+        marker_c7232f0168243865b4c32f9f90f70526.bindPopup(popup_35fe4f8028ae9d27f22a39e3f62077fb)
+        ;
+
+        
+    
+    
+            var marker_67425c635190fb9821930ce23713a197 = L.marker(
+                [50.36133333333333, 3.0289444444444444],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_0baffa733508c3e1382479f8feb991d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_67425c635190fb9821930ce23713a197.setIcon(icon_0baffa733508c3e1382479f8feb991d9);
+        
+    
+        var popup_cee26805485899495288d5f0fdf9b0f2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4e7d321d155c4329ffe7eeb1d02aec29 = $(`<div id="html_4e7d321d155c4329ffe7eeb1d02aec29" style="width: 100.0%; height: 100.0%;">                 <b>Renault</b><br>                 Commune : Guyancourt<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_cee26805485899495288d5f0fdf9b0f2.setContent(html_4e7d321d155c4329ffe7eeb1d02aec29);
+            
+        
+
+        marker_67425c635190fb9821930ce23713a197.bindPopup(popup_cee26805485899495288d5f0fdf9b0f2)
+        ;
+
+        
+    
+    
+            var marker_8f4c7d1575872714abd805e7fc2f4379 = L.marker(
+                [45.72694444444445, 4.97925],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_60013e1630da9d0ba476e9773058681a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8f4c7d1575872714abd805e7fc2f4379.setIcon(icon_60013e1630da9d0ba476e9773058681a);
+        
+    
+        var popup_1206bef7f137d0cc71890877e67d7663 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_871e627370586abfe6b473a0b8e9ed4b = $(`<div id="html_871e627370586abfe6b473a0b8e9ed4b" style="width: 100.0%; height: 100.0%;">                 <b>Sysoco/Axians</b><br>                 Commune : Genas<br>                 Région : Auvergne-Rhône-Alpes<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_1206bef7f137d0cc71890877e67d7663.setContent(html_871e627370586abfe6b473a0b8e9ed4b);
+            
+        
+
+        marker_8f4c7d1575872714abd805e7fc2f4379.bindPopup(popup_1206bef7f137d0cc71890877e67d7663)
+        ;
+
+        
+    
+    
+            var marker_e3b484ffc70cff4bcef06525f465e310 = L.marker(
+                [48.92572222222222, 2.3153888888888887],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_8c0ec7ba26126ef85b4e156a46470093 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e3b484ffc70cff4bcef06525f465e310.setIcon(icon_8c0ec7ba26126ef85b4e156a46470093);
+        
+    
+        var popup_a5ecac0aced25a7430e543e43d0f2f59 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b0123dbb2d519fd2223d4a4a2fa7ccaa = $(`<div id="html_b0123dbb2d519fd2223d4a4a2fa7ccaa" style="width: 100.0%; height: 100.0%;">                 <b>Sysoco/Axians</b><br>                 Commune : Gennevilliers<br>                 Région : Île-de-France<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_a5ecac0aced25a7430e543e43d0f2f59.setContent(html_b0123dbb2d519fd2223d4a4a2fa7ccaa);
+            
+        
+
+        marker_e3b484ffc70cff4bcef06525f465e310.bindPopup(popup_a5ecac0aced25a7430e543e43d0f2f59)
+        ;
+
+        
+    
+    
+            var marker_e1b38da63901c490f311f6c86bd52bdf = L.marker(
+                [43.64833333333333, 6.345],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_9624013408337d1c6be07d5472df353f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e1b38da63901c490f311f6c86bd52bdf.setIcon(icon_9624013408337d1c6be07d5472df353f);
+        
+    
+        var popup_e4cf48c441be89a3be7e6f5fdd95c412 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9dd699abcf31a35c93206ccc5e40566b = $(`<div id="html_9dd699abcf31a35c93206ccc5e40566b" style="width: 100.0%; height: 100.0%;">                 <b>Luceor</b><br>                 Commune : Montferrat<br>                 Région : Provence-Alpes-Côte d'Azur<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_e4cf48c441be89a3be7e6f5fdd95c412.setContent(html_9dd699abcf31a35c93206ccc5e40566b);
+            
+        
+
+        marker_e1b38da63901c490f311f6c86bd52bdf.bindPopup(popup_e4cf48c441be89a3be7e6f5fdd95c412)
+        ;
+
+        
+    
+    
+            var marker_3447b433d566381d75e885849117774b = L.marker(
+                [48.41797222222222, 1.4896666666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_9df9445a5fc22c19686a5aa7a657cb8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3447b433d566381d75e885849117774b.setIcon(icon_9df9445a5fc22c19686a5aa7a657cb8e);
+        
+    
+        var popup_d7402cf1b65bfb83b8bba764ac7eb1ce = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7dea0af94418bcfaa07b9d3b0b3e221 = $(`<div id="html_f7dea0af94418bcfaa07b9d3b0b3e221" style="width: 100.0%; height: 100.0%;">                 <b>CCIN</b><br>                 Commune : Le Coudray<br>                 Région : Centre-Val de Loire<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_d7402cf1b65bfb83b8bba764ac7eb1ce.setContent(html_f7dea0af94418bcfaa07b9d3b0b3e221);
+            
+        
+
+        marker_3447b433d566381d75e885849117774b.bindPopup(popup_d7402cf1b65bfb83b8bba764ac7eb1ce)
+        ;
+
+        
+    
+    
+            var marker_9d9d616eaaef58a5b3b1e5958a515296 = L.marker(
+                [48.84741666666667, 2.249277777777778],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_3246a3857f78ab0bd05c19cdd325d219 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9d9d616eaaef58a5b3b1e5958a515296.setIcon(icon_3246a3857f78ab0bd05c19cdd325d219);
+        
+    
+        var popup_e6e38fed907a5e164d141b68345e7331 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd2077208c2e65795c357550eaba1273 = $(`<div id="html_fd2077208c2e65795c357550eaba1273" style="width: 100.0%; height: 100.0%;">                 <b>Orange Events</b><br>                 Commune : Paris<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_e6e38fed907a5e164d141b68345e7331.setContent(html_fd2077208c2e65795c357550eaba1273);
+            
+        
+
+        marker_9d9d616eaaef58a5b3b1e5958a515296.bindPopup(popup_e6e38fed907a5e164d141b68345e7331)
+        ;
+
+        
+    
+    
+            var marker_b7d2ef4e89f4d49d2a0e6b620f2e1e61 = L.marker(
+                [47.75425, -3.3503055555555554],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_c34b042f2344bef16b2bab934cd15311 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b7d2ef4e89f4d49d2a0e6b620f2e1e61.setIcon(icon_c34b042f2344bef16b2bab934cd15311);
+        
+    
+        var popup_f484ee6feaa47308f16647396d646d6f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2ad1fe758cc8fc244afd339e7a9c8a74 = $(`<div id="html_2ad1fe758cc8fc244afd339e7a9c8a74" style="width: 100.0%; height: 100.0%;">                 <b>B-COM</b><br>                 Commune : Lorient<br>                 Région : Bretagne<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_f484ee6feaa47308f16647396d646d6f.setContent(html_2ad1fe758cc8fc244afd339e7a9c8a74);
+            
+        
+
+        marker_b7d2ef4e89f4d49d2a0e6b620f2e1e61.bindPopup(popup_f484ee6feaa47308f16647396d646d6f)
+        ;
+
+        
+    
+    
+            var marker_f0b448a4d1334317172833ea8fe4d2f0 = L.marker(
+                [48.41797222222222, 1.4896666666666667],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_1542fe1c02a20c5a85d1f6144fdbe1bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f0b448a4d1334317172833ea8fe4d2f0.setIcon(icon_1542fe1c02a20c5a85d1f6144fdbe1bf);
+        
+    
+        var popup_710aabd1ea6be4b03ed0f02104be7187 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bbd4923dd6b5b98a77a16e33cfabbfd1 = $(`<div id="html_bbd4923dd6b5b98a77a16e33cfabbfd1" style="width: 100.0%; height: 100.0%;">                 <b>CCIN</b><br>                 Commune : Le Coudray<br>                 Région : Centre-Val de Loire<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_710aabd1ea6be4b03ed0f02104be7187.setContent(html_bbd4923dd6b5b98a77a16e33cfabbfd1);
+            
+        
+
+        marker_f0b448a4d1334317172833ea8fe4d2f0.bindPopup(popup_710aabd1ea6be4b03ed0f02104be7187)
+        ;
+
+        
+    
+    
+            var marker_5aa04984b40d91d9254ba0c471fc6d99 = L.marker(
+                [16.220555555555553, -61.5297222222222],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_ce3e32339af3f58fa1e95ed6d4329fd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5aa04984b40d91d9254ba0c471fc6d99.setIcon(icon_ce3e32339af3f58fa1e95ed6d4329fd1);
+        
+    
+        var popup_8ef4b6edbd77649acc5e667bb9511bf0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4f3afb102eecf02a05162965685e01b2 = $(`<div id="html_4f3afb102eecf02a05162965685e01b2" style="width: 100.0%; height: 100.0%;">                 <b>Dauphin Telecom</b><br>                 Commune : Le Gosier<br>                 Région : Guadeloupe<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_8ef4b6edbd77649acc5e667bb9511bf0.setContent(html_4f3afb102eecf02a05162965685e01b2);
+            
+        
+
+        marker_5aa04984b40d91d9254ba0c471fc6d99.bindPopup(popup_8ef4b6edbd77649acc5e667bb9511bf0)
+        ;
+
+        
+    
+    
+            var marker_046f1cd113605a4b6240796478e6f768 = L.marker(
+                [48.84355555555556, 2.6655],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_023264d6591b0b9d7ef8210c0ec26c6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_046f1cd113605a4b6240796478e6f768.setIcon(icon_023264d6591b0b9d7ef8210c0ec26c6e);
+        
+    
+        var popup_609bc28486b6301f9ae3550e028208f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cb2f43ef7c2c8b34e55354305a9bd87e = $(`<div id="html_cb2f43ef7c2c8b34e55354305a9bd87e" style="width: 100.0%; height: 100.0%;">                 <b>EMG France</b><br>                 Commune : Bussy-Saint-Martin<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_609bc28486b6301f9ae3550e028208f6.setContent(html_cb2f43ef7c2c8b34e55354305a9bd87e);
+            
+        
+
+        marker_046f1cd113605a4b6240796478e6f768.bindPopup(popup_609bc28486b6301f9ae3550e028208f6)
+        ;
+
+        
+    
+    
+            var marker_529eef157f3e20df0476849a796a2838 = L.marker(
+                [48.71272222222223, 2.194472222222222],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_9e9b907084a1139b5c5273d80ff80758 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_529eef157f3e20df0476849a796a2838.setIcon(icon_9e9b907084a1139b5c5273d80ff80758);
+        
+    
+        var popup_13063627e20e553ff6a0c87511a6e7af = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7b5a0ff8fbc1d51f0a9aba2d0bf5f190 = $(`<div id="html_7b5a0ff8fbc1d51f0a9aba2d0bf5f190" style="width: 100.0%; height: 100.0%;">                 <b>CEA</b><br>                 Commune : Palaiseau<br>                 Région : Île-de-France<br>                 Bande utilisée : 3,8 GHz                 </div>`)[0];
+                popup_13063627e20e553ff6a0c87511a6e7af.setContent(html_7b5a0ff8fbc1d51f0a9aba2d0bf5f190);
+            
+        
+
+        marker_529eef157f3e20df0476849a796a2838.bindPopup(popup_13063627e20e553ff6a0c87511a6e7af)
+        ;
+
+        
+    
+    
+            var marker_9b96d7bd2bbccaf13c22478f5c936713 = L.marker(
+                [43.55661111111111, 4.183194444444445],
+                {}
+            ).addTo(marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775);
+        
+    
+            var icon_a01467f6176a42541465d5c4f506533a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9b96d7bd2bbccaf13c22478f5c936713.setIcon(icon_a01467f6176a42541465d5c4f506533a);
+        
+    
+        var popup_24cc320a15b1e81727ed4a60f87201a0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2c1a9d7b13963b22cc0c88289f9f52cf = $(`<div id="html_2c1a9d7b13963b22cc0c88289f9f52cf" style="width: 100.0%; height: 100.0%;">                 <b>Compagnie des salins du midi et des salines de l'Est</b><br>                 Commune : Aigues-Mortes<br>                 Région : Occitanie<br>                 Bande utilisée : 2,6 GHz TDD                 </div>`)[0];
+                popup_24cc320a15b1e81727ed4a60f87201a0.setContent(html_2c1a9d7b13963b22cc0c88289f9f52cf);
+            
+        
+
+        marker_9b96d7bd2bbccaf13c22478f5c936713.bindPopup(popup_24cc320a15b1e81727ed4a60f87201a0)
+        ;
+
+        
+    
+    
+            marker_cluster_cdc99d9d3a106d99ca29e5c51b3fa775.addTo(map_e9d445a114ff8a72666aba2c0772636c);
+        
+</script>
+</html>
